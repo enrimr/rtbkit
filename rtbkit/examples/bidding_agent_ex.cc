@@ -100,6 +100,7 @@ struct FixedPriceBiddingAgent :
         config.creatives.push_back(Creative::sampleLB);
         config.creatives.push_back(Creative::sampleWS);
         config.creatives.push_back(Creative::sampleBB);
+        config.creatives.push_back(Creative::fairtimeOne);
         //config.creatives.push_back(Creative(640, 1136,  "FTiPhone"));
 
 
