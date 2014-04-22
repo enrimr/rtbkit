@@ -100,7 +100,7 @@ struct FixedPriceBiddingAgent :
         config.creatives.push_back(Creative::sampleLB);
         config.creatives.push_back(Creative::sampleWS);
         config.creatives.push_back(Creative::sampleBB);
-        //config.creatives.push_back(Creative(640, 1136,  "FT: iPhone"));
+        config.creatives.push_back(Creative(640, 1136,  "FT: iPhone"));
 
 
         // Indicate to the router that we want our bid requests to be augmented
