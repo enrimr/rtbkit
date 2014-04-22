@@ -38,6 +38,8 @@ struct Creative {
     static const Creative sampleLB;
     static const Creative sampleBB;
     static const Creative sampleWS;
+    static const Creative fiartimeOne;
+    static const Creative fairtimeTwo;
 
     void fromJson(const Json::Value & val);
     Json::Value toJson() const;
@@ -66,7 +68,7 @@ struct Creative {
             throw ML::Exception("provider data for " + provider + " not found");
         if (it->second.get() == nullptr)
             throw ML::Exception("provider data for " + provider + " is null");
-        
+
         return reinterpret_cast<const T *>(it->second.get());
     }
 
@@ -245,7 +247,7 @@ struct AgentConfig {
     uint64_t externalId;  ///< Simplifies id reconciliation with external systems
 
     bool test;            ///< Can't make real bids
-    
+
     std::string roundRobinGroup;
     int roundRobinWeight;
 
@@ -274,9 +276,9 @@ struct AgentConfig {
         /** What exchanges is this filter applied to?  If the exchange
             is excluded by the filter, then the filter is bypassed. */
         IncludeExclude<std::string> applyToExchanges;
-        
+
         IncludeExcludeResult process(const SegmentList & segments) const;
-        
+
         void fromJson(const Json::Value & val);
         Json::Value toJson() const;
     };
@@ -302,7 +304,7 @@ struct AgentConfig {
 
         std::bitset<168> hourBitmap;
     };
-    
+
     HourOfWeekFilter hourOfWeekFilter;
 
     UserPartition userPartition;
@@ -312,7 +314,7 @@ struct AgentConfig {
     BlacklistType blacklistType;
     BlacklistScope blacklistScope;
     double blacklistTime;
-    
+
     bool hasBlacklist() const
     {
         return blacklistType != BL_OFF && blacklistTime > 0.0;
@@ -351,7 +353,7 @@ struct AgentConfig {
             throw ML::Exception("provider data for " + provider + " not found");
         if (it->second.get() == nullptr)
             throw ML::Exception("provider data for " + provider + " is null");
-        
+
         return reinterpret_cast<const T *>(it->second.get());
     }
 
