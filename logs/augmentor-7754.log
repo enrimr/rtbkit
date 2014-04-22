@@ -1,0 +1,53 @@
+2014-04-22 07:38:08.262 ZMQ ./soa/service/zmq_endpoint.cc:447 - bool Datacratic::ZmqNamedProxy::connect(const string&, Datacratic::ConnectionStyle) [1;31mconnecting to agentConfigurationService/listen[0m
+2014-04-22 07:38:08.265 ZMQ ./soa/service/zmq_endpoint.cc:494 - bool Datacratic::ZmqNamedProxy::connect(const string&, Datacratic::ConnectionStyle) [1;31mconnected to tcp://ip-172-31-27-189.ec2.internal:19000[0m
+got configuration message fixed-price-agent-ex_7391
+
+--------------------------[Exception thrown]---------------------------
+time:   2014-04-22-073808
+type:   ML::Exception
+pid:    7754; tid: 7763
+what:   creatives require an ID to be specified
+stack:
+00: 0x0x7fe5bec42db7 at __cxa_throw + 0x27 in /home/rtbkit/rtbkit/build/x86_64/bin/../bin/libexception_hook.so + 0xdb7/home/rtbkit/rtbkit/build/x86_64/bin/../bin/libexception_hook.so(__cxa_throw+0x27) [0x7fe5bec42db7]
+01: 0x0x7fe5bb532785 at RTBKIT::Creative::fromJson(Json::Value const&) + 0x215 in /home/rtbkit/rtbkit/build/x86_64/bin/../bin/../bin/libagent_configuration.so + 0x51785/home/rtbkit/rtbkit/build/x86_64/bin/../bin/../bin/libagent_configuration.so(_ZN6RTBKIT8Creative8fromJsonERKN4Json5ValueE+0x215) [0x7fe5bb532785]
+02: 0x0x7fe5bb532f82 at RTBKIT::AgentConfig::createFromJson(Json::Value const&) + 0x792 in /home/rtbkit/rtbkit/build/x86_64/bin/../bin/../bin/libagent_configuration.so + 0x51f82/home/rtbkit/rtbkit/build/x86_64/bin/../bin/../bin/libagent_configuration.so(_ZN6RTBKIT11AgentConfig14createFromJsonERKN4Json5ValueE+0x792) [0x7fe5bb532f82]
+03: 0x0x7fe5bb566b68 at RTBKIT::AgentConfigurationListener::onMessage(std::vector<std::string, std::allocator<std::string> > const&) + 0x808 in /home/rtbkit/rtbkit/build/x86_64/bin/../bin/../bin/libagent_configuration.so + 0x85b68/home/rtbkit/rtbkit/build/x86_64/bin/../bin/../bin/libagent_configuration.so(_ZN6RTBKIT26AgentConfigurationListener9onMessageERKSt6vectorISsSaISsEE+0x808) [0x7fe5bb566b68]
+04: 0x0x4266c4 at Datacratic::ZmqNamedClientBusProxy::handleMessage(std::vector<std::string, std::allocator<std::string> > const&) + 0xe4 in build/x86_64/bin/augmentor_ex_runner + 0x266c4build/x86_64/bin/augmentor_ex_runner(_ZN10Datacratic22ZmqNamedClientBusProxy13handleMessageERKSt6vectorISsSaISsEE+0xe4) [0x4266c4]
+05: 0x0x7fe5bca2045b at Datacratic::ZmqEventSource::handleMessage(std::vector<std::string, std::allocator<std::string> > const&) + 0x6b in /home/rtbkit/rtbkit/build/x86_64/bin/../bin/libservices.so + 0xc645b/home/rtbkit/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZN10Datacratic14ZmqEventSource13handleMessageERKSt6vectorISsSaISsEE+0x6b) [0x7fe5bca2045b]
+06: 0x0x7fe5bca20eb7 at Datacratic::ZmqEventSource::processOne() + 0x147 in /home/rtbkit/rtbkit/build/x86_64/bin/../bin/libservices.so + 0xc6eb7/home/rtbkit/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZN10Datacratic14ZmqEventSource10processOneEv+0x147) [0x7fe5bca20eb7]
+07: 0x0x7fe5bca13cca at Datacratic::MessageLoop::processOne() + 0xba in /home/rtbkit/rtbkit/build/x86_64/bin/../bin/libservices.so + 0xb9cca/home/rtbkit/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZN10Datacratic11MessageLoop10processOneEv+0xba) [0x7fe5bca13cca]
+08: 0x0x7fe5bca13cca at Datacratic::MessageLoop::processOne() + 0xba in /home/rtbkit/rtbkit/build/x86_64/bin/../bin/libservices.so + 0xb9cca/home/rtbkit/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZN10Datacratic11MessageLoop10processOneEv+0xba) [0x7fe5bca13cca]
+09: 0x0x7fe5bca13cca at Datacratic::MessageLoop::processOne() + 0xba in /home/rtbkit/rtbkit/build/x86_64/bin/../bin/libservices.so + 0xb9cca/home/rtbkit/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZN10Datacratic11MessageLoop10processOneEv+0xba) [0x7fe5bca13cca]
+10: 0x0x7fe5bca0f579 at Datacratic::MessageLoop::runWorkerThread() + 0xc9 in /home/rtbkit/rtbkit/build/x86_64/bin/../bin/libservices.so + 0xb5579/home/rtbkit/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZN10Datacratic11MessageLoop15runWorkerThreadEv+0xc9) [0x7fe5bca0f579]
+11: 0x0x7fe5bca0fe58 in /home/rtbkit/rtbkit/build/x86_64/bin/../bin/libservices.so + 0xb5e58/home/rtbkit/rtbkit/build/x86_64/bin/../bin/libservices.so(+0xb5e58) [0x7fe5bca0fe58]
+12: 0x0x7fe5bc03db9d in /home/rtbkit/local/lib/libboost_thread.so.1.52.0 + 0x10b9d/home/rtbkit/local/lib/libboost_thread.so.1.52.0(+0x10b9d) [0x7fe5bc03db9d]
+13: 0x0x7fe5bee4ce9a in /lib/x86_64-linux-gnu/libpthread.so.0 + 0x7e9a/lib/x86_64-linux-gnu/libpthread.so.0(+0x7e9a) [0x7fe5bee4ce9a]
+14: 0x0x7fe5bd8213fd at clone + 0x6d in /lib/x86_64-linux-gnu/libc.so.6 + 0xf43fd/lib/x86_64-linux-gnu/libc.so.6(clone+0x6d) [0x7fe5bd8213fd]
+
+
+--------------------------[Exception thrown]---------------------------
+time:   2014-04-22-073808
+type:   ML::Exception
+pid:    7754; tid: 7763
+what:   parsing creative 3: creatives require an ID to be specified
+stack:
+00: 0x0x7fe5bec42db7 at __cxa_throw + 0x27 in /home/rtbkit/rtbkit/build/x86_64/bin/../bin/libexception_hook.so + 0xdb7/home/rtbkit/rtbkit/build/x86_64/bin/../bin/libexception_hook.so(__cxa_throw+0x27) [0x7fe5bec42db7]
+01: 0x0x7fe5bb5336b3 at RTBKIT::AgentConfig::createFromJson(Json::Value const&) + 0xec3 in /home/rtbkit/rtbkit/build/x86_64/bin/../bin/../bin/libagent_configuration.so + 0x526b3/home/rtbkit/rtbkit/build/x86_64/bin/../bin/../bin/libagent_configuration.so(_ZN6RTBKIT11AgentConfig14createFromJsonERKN4Json5ValueE+0xec3) [0x7fe5bb5336b3]
+02: 0x0x7fe5bb566b68 at RTBKIT::AgentConfigurationListener::onMessage(std::vector<std::string, std::allocator<std::string> > const&) + 0x808 in /home/rtbkit/rtbkit/build/x86_64/bin/../bin/../bin/libagent_configuration.so + 0x85b68/home/rtbkit/rtbkit/build/x86_64/bin/../bin/../bin/libagent_configuration.so(_ZN6RTBKIT26AgentConfigurationListener9onMessageERKSt6vectorISsSaISsEE+0x808) [0x7fe5bb566b68]
+03: 0x0x4266c4 at Datacratic::ZmqNamedClientBusProxy::handleMessage(std::vector<std::string, std::allocator<std::string> > const&) + 0xe4 in build/x86_64/bin/augmentor_ex_runner + 0x266c4build/x86_64/bin/augmentor_ex_runner(_ZN10Datacratic22ZmqNamedClientBusProxy13handleMessageERKSt6vectorISsSaISsEE+0xe4) [0x4266c4]
+04: 0x0x7fe5bca2045b at Datacratic::ZmqEventSource::handleMessage(std::vector<std::string, std::allocator<std::string> > const&) + 0x6b in /home/rtbkit/rtbkit/build/x86_64/bin/../bin/libservices.so + 0xc645b/home/rtbkit/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZN10Datacratic14ZmqEventSource13handleMessageERKSt6vectorISsSaISsEE+0x6b) [0x7fe5bca2045b]
+05: 0x0x7fe5bca20eb7 at Datacratic::ZmqEventSource::processOne() + 0x147 in /home/rtbkit/rtbkit/build/x86_64/bin/../bin/libservices.so + 0xc6eb7/home/rtbkit/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZN10Datacratic14ZmqEventSource10processOneEv+0x147) [0x7fe5bca20eb7]
+06: 0x0x7fe5bca13cca at Datacratic::MessageLoop::processOne() + 0xba in /home/rtbkit/rtbkit/build/x86_64/bin/../bin/libservices.so + 0xb9cca/home/rtbkit/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZN10Datacratic11MessageLoop10processOneEv+0xba) [0x7fe5bca13cca]
+07: 0x0x7fe5bca13cca at Datacratic::MessageLoop::processOne() + 0xba in /home/rtbkit/rtbkit/build/x86_64/bin/../bin/libservices.so + 0xb9cca/home/rtbkit/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZN10Datacratic11MessageLoop10processOneEv+0xba) [0x7fe5bca13cca]
+08: 0x0x7fe5bca13cca at Datacratic::MessageLoop::processOne() + 0xba in /home/rtbkit/rtbkit/build/x86_64/bin/../bin/libservices.so + 0xb9cca/home/rtbkit/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZN10Datacratic11MessageLoop10processOneEv+0xba) [0x7fe5bca13cca]
+09: 0x0x7fe5bca0f579 at Datacratic::MessageLoop::runWorkerThread() + 0xc9 in /home/rtbkit/rtbkit/build/x86_64/bin/../bin/libservices.so + 0xb5579/home/rtbkit/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZN10Datacratic11MessageLoop15runWorkerThreadEv+0xc9) [0x7fe5bca0f579]
+10: 0x0x7fe5bca0fe58 in /home/rtbkit/rtbkit/build/x86_64/bin/../bin/libservices.so + 0xb5e58/home/rtbkit/rtbkit/build/x86_64/bin/../bin/libservices.so(+0xb5e58) [0x7fe5bca0fe58]
+11: 0x0x7fe5bc03db9d in /home/rtbkit/local/lib/libboost_thread.so.1.52.0 + 0x10b9d/home/rtbkit/local/lib/libboost_thread.so.1.52.0(+0x10b9d) [0x7fe5bc03db9d]
+12: 0x0x7fe5bee4ce9a in /lib/x86_64-linux-gnu/libpthread.so.0 + 0x7e9a/lib/x86_64-linux-gnu/libpthread.so.0(+0x7e9a) [0x7fe5bee4ce9a]
+13: 0x0x7fe5bd8213fd at clone + 0x6d in /lib/x86_64-linux-gnu/libc.so.6 + 0xf43fd/lib/x86_64-linux-gnu/libc.so.6(clone+0x6d) [0x7fe5bd8213fd]
+
+exception processing source ZmqNamedClientBusProxy::doMessage
+exception processing source AgentConfigurationListener::configEndpoint
+exception processing source FrequencyCapAugmentor::agentConfig
+terminate called after throwing an instance of 'ML::Exception'
+  what():  parsing creative 3: creatives require an ID to be specified

@@ -1,0 +1,10 @@
+2014-04-22 07:41:57.394 ZMQ Trace ./soa/service/zmq_endpoint.cc:814 - void Datacratic::ZmqMultipleNamedClientBusProxy::watchServiceProvider(const string&, const string&) [1;31mconnecting to router.augmentationLoop / router.augmentationLoop[0m
+2014-04-22 07:41:57.395 ZMQ ./soa/service/zmq_endpoint.cc:447 - bool Datacratic::ZmqNamedProxy::connect(const string&, Datacratic::ConnectionStyle) [1;31mconnecting to router.augmentationLoop/augmentors[0m
+2014-04-22 07:41:57.405 ZMQ ./soa/service/zmq_endpoint.cc:494 - bool Datacratic::ZmqNamedProxy::connect(const string&, Datacratic::ConnectionStyle) [1;31mconnected to tcp://ip-172-31-27-189.ec2.internal:18000[0m
+2014-04-22 07:41:57.413 ZMQ ./soa/service/zmq_endpoint.cc:447 - bool Datacratic::ZmqNamedProxy::connect(const string&, Datacratic::ConnectionStyle) [1;31mconnecting to agentConfigurationService/listen[0m
+wexists handler returned -101
+2. returning result 
+wexists handler returned -101
+2. returning result 
+warning: could not connect to PostAuctionLoop/logger immediately
+need to disconenct from rtbPostAuctionService serviceClass/rtbPostAuctionService/PostAuctionLoop logger

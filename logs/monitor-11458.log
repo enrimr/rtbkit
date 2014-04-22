@@ -1,0 +1,121 @@
+bound tcp for http port 9987
+monitor is listening on tcp://*:24000,http://0.0.0.0:9987
+router.augmentationLoop/augmentors/tcp --> [{"transports":[{"addr":"127.0.0.1","hostScope":"ip-172-31-27-189.ec2.internal","name":"tcp","port":18000},{"name":"zeromq","socketType":6,"uri":"tcp://127.0.0.1:18000"}],"zmqConnectUri":"tcp://127.0.0.1:18000"},{"transports":[{"addr":"172.31.27.189","hostScope":"*","name":"tcp","port":18000},{"name":"zeromq","socketType":6,"uri":"tcp://ip-172-31-27-189.ec2.internal:18000"}],"zmqConnectUri":"tcp://ip-172-31-27-189.ec2.internal:18000"}]
+serviceClass/rtbAgentConfiguration/agentConfigurationService --> {"serviceLocation":"mtl","serviceName":"agentConfigurationService","servicePath":"agentConfigurationService"}
+serviceClass/monitor/monitor --> {"serviceLocation":"mtl","serviceName":"monitor","servicePath":"monitor"}
+serviceClass/rtbRequestRouter/router --> {"serviceLocation":"mtl","serviceName":"router","servicePath":"router"}
+serviceClass/rtbBanker/masterBanker --> {"serviceLocation":"mtl","serviceName":"masterBanker","servicePath":"masterBanker"}
+serviceClass/rtbRouterAugmentation/router.augmentationLoop --> {"serviceLocation":"mtl","serviceName":"router.augmentationLoop","servicePath":"router.augmentationLoop"}
+serviceClass/rtbPostAuctionService/PostAuctionLoop --> {"serviceLocation":"mtl","serviceName":"PostAuctionLoop","servicePath":"PostAuctionLoop"}
+monitor/http/tcp --> [{"httpUri":"http://127.0.0.1:9987","transports":[{"addr":"127.0.0.1","hostScope":"ip-172-31-27-189.ec2.internal","name":"tcp","port":9987},{"name":"http","uri":"http://127.0.0.1:9987"}]},{"httpUri":"http://172.31.27.189:9987","transports":[{"addr":"172.31.27.189","hostScope":"*","name":"tcp","port":9987},{"name":"http","uri":"http://172.31.27.189:9987"}]}]
+monitor/zeromq/tcp --> [{"transports":[{"addr":"127.0.0.1","hostScope":"ip-172-31-27-189.ec2.internal","name":"tcp","port":24000},{"name":"zeromq","socketType":6,"uri":"tcp://127.0.0.1:24000"}],"zmqConnectUri":"tcp://127.0.0.1:24000"},{"transports":[{"addr":"172.31.27.189","hostScope":"*","name":"tcp","port":24000},{"name":"zeromq","socketType":6,"uri":"tcp://ip-172-31-27-189.ec2.internal:24000"}],"zmqConnectUri":"tcp://ip-172-31-27-189.ec2.internal:24000"}]
+
+
+rtbAgentConfiguration: 
+    agentConfigurationService OK  2014-04-22 12:24:51  Alive
+rtbBanker: 
+    masterBanker         OK  2014-04-22 12:24:51  Banker persistence: OK
+rtbDataLogger: 
+    data_logger          OK  2014-04-22 12:24:52  Alive
+rtbPostAuctionService: 
+    PostAuctionLoop      ERR 2014-04-22 12:24:51  WinLoss pipe: ERROR, CampaignEvent pipe: ERROR
+rtbRequestRouter: 
+
+
+rtbAgentConfiguration: 
+    agentConfigurationService OK  2014-04-22 12:25:01  Alive
+rtbBanker: 
+    masterBanker         OK  2014-04-22 12:25:01  Banker persistence: OK
+rtbDataLogger: 
+    data_logger          OK  2014-04-22 12:25:02  Alive
+rtbPostAuctionService: 
+    PostAuctionLoop      ERR 2014-04-22 12:25:01  WinLoss pipe: ERROR, CampaignEvent pipe: ERROR
+rtbRequestRouter: 
+
+
+rtbAgentConfiguration: 
+    agentConfigurationService OK  2014-04-22 12:25:11  Alive
+rtbBanker: 
+    masterBanker         OK  2014-04-22 12:25:11  Banker persistence: OK
+rtbDataLogger: 
+    data_logger          OK  2014-04-22 12:25:12  Alive
+rtbPostAuctionService: 
+    PostAuctionLoop      ERR 2014-04-22 12:25:11  WinLoss pipe: ERROR, CampaignEvent pipe: ERROR
+rtbRequestRouter: 
+
+
+rtbAgentConfiguration: 
+    agentConfigurationService OK  2014-04-22 12:25:21  Alive
+rtbBanker: 
+    masterBanker         OK  2014-04-22 12:25:21  Banker persistence: OK
+rtbDataLogger: 
+    data_logger          OK  2014-04-22 12:25:22  Alive
+rtbPostAuctionService: 
+    PostAuctionLoop      ERR 2014-04-22 12:25:21  WinLoss pipe: ERROR, CampaignEvent pipe: ERROR
+rtbRequestRouter: 
+
+
+rtbAgentConfiguration: 
+    agentConfigurationService OK  2014-04-22 12:25:31  Alive
+rtbBanker: 
+    masterBanker         OK  2014-04-22 12:25:31  Banker persistence: OK
+rtbDataLogger: 
+    data_logger          OK  2014-04-22 12:25:32  Alive
+rtbPostAuctionService: 
+    PostAuctionLoop      ERR 2014-04-22 12:25:31  WinLoss pipe: ERROR, CampaignEvent pipe: ERROR
+rtbRequestRouter: 
+
+
+rtbAgentConfiguration: 
+    agentConfigurationService OK  2014-04-22 12:25:41  Alive
+rtbBanker: 
+    masterBanker         OK  2014-04-22 12:25:41  Banker persistence: OK
+rtbDataLogger: 
+    data_logger          OK  2014-04-22 12:25:42  Alive
+rtbPostAuctionService: 
+    PostAuctionLoop      ERR 2014-04-22 12:25:41  WinLoss pipe: ERROR, CampaignEvent pipe: ERROR
+rtbRequestRouter: 
+
+
+rtbAgentConfiguration: 
+    agentConfigurationService OK  2014-04-22 12:25:51  Alive
+rtbBanker: 
+    masterBanker         OK  2014-04-22 12:25:51  Banker persistence: OK
+rtbDataLogger: 
+    data_logger          OK  2014-04-22 12:25:52  Alive
+rtbPostAuctionService: 
+    PostAuctionLoop      ERR 2014-04-22 12:25:51  WinLoss pipe: ERROR, CampaignEvent pipe: ERROR
+rtbRequestRouter: 
+
+
+rtbAgentConfiguration: 
+    agentConfigurationService OK  2014-04-22 12:26:01  Alive
+rtbBanker: 
+    masterBanker         OK  2014-04-22 12:26:01  Banker persistence: OK
+rtbDataLogger: 
+    data_logger          OK  2014-04-22 12:26:02  Alive
+rtbPostAuctionService: 
+    PostAuctionLoop      ERR 2014-04-22 12:26:01  WinLoss pipe: ERROR, CampaignEvent pipe: ERROR
+rtbRequestRouter: 
+
+
+rtbAgentConfiguration: 
+    agentConfigurationService OK  2014-04-22 12:26:11  Alive
+rtbBanker: 
+    masterBanker         OK  2014-04-22 12:26:11  Banker persistence: OK
+rtbDataLogger: 
+    data_logger          OK  2014-04-22 12:26:12  Alive
+rtbPostAuctionService: 
+    PostAuctionLoop      ERR 2014-04-22 12:26:11  WinLoss pipe: ERROR, CampaignEvent pipe: ERROR
+rtbRequestRouter: 
+
+
+rtbAgentConfiguration: 
+    agentConfigurationService OK  2014-04-22 12:26:21  Alive
+rtbBanker: 
+    masterBanker         OK  2014-04-22 12:26:21  Banker persistence: OK
+rtbDataLogger: 
+    data_logger          OK  2014-04-22 12:26:22  Alive
+rtbPostAuctionService: 
+    PostAuctionLoop      ERR 2014-04-22 12:26:21  WinLoss pipe: ERROR, CampaignEvent pipe: ERROR
+rtbRequestRouter: 

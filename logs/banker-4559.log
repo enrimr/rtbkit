@@ -1,0 +1,22 @@
+connecting to Carbon at 127.0.0.1:2003 (localhost)
+onConnect: code = -1 err = 0 errstr = Connection refused errno = Connection refused
+disconnection with status -1
+onConnect: code = -1 err = 0 errstr = Connection refused errno = Connection refused
+onConnect: code = -1 err = 1 errstr = getsockopt(SO_ERROR): Socket operation on non-socket errno = Socket operation on non-socket
+disconnection with status -1
+--------------------------[Exception thrown]---------------------------
+time:   2014-04-22-110829
+type:   ML::Exception
+pid:    4559; tid: 4559
+what:   couldn't connect to Redis: Connection refused
+stack:
+
+onConnect: code = -1 err = 1 errstr = getsockopt(SO_ERROR): Socket operation on non-socket errno = Socket operation on non-socket
+00: 0x0x7fe437c56db7 at __cxa_throw + 0x27 in /home/rtbkit/rtbkit/build/x86_64/bin/../bin/libexception_hook.so + 0xdb7/home/rtbkit/rtbkit/build/x86_64/bin/../bin/libexception_hook.so(__cxa_throw+0x27) [0x7fe437c56db7]
+01: 0x0x7fe435f4e076 at Redis::AsyncConnection::test() + 0x196 in /home/rtbkit/rtbkit/build/x86_64/bin/../bin/libredis.so + 0x1a076/home/rtbkit/rtbkit/build/x86_64/bin/../bin/libredis.so(_ZN5Redis15AsyncConnection4testEv+0x196) [0x7fe435f4e076]
+02: 0x0x40f065 at main + 0x695 in build/x86_64/bin/banker_service_runner + 0xf065build/x86_64/bin/banker_service_runner(main+0x695) [0x40f065]
+03: 0x0x7fe43672d76d at __libc_start_main + 0xed in /lib/x86_64-linux-gnu/libc.so.6 + 0x2176d/lib/x86_64-linux-gnu/libc.so.6(__libc_start_main+0xed) [0x7fe43672d76d]
+04: 0x0x40f76d in build/x86_64/bin/banker_service_runner + 0xf76dbuild/x86_64/bin/banker_service_runner() [0x40f76d]
+
+terminate called after throwing an instance of 'ML::Exception'
+  what():  couldn't connect to Redis: Connection refused

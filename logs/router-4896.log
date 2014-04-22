@@ -1,0 +1,29 @@
+connecting to Carbon at 127.0.0.1:2003 (localhost)
+2014-04-22 07:12:02.020 ZMQ ./soa/service/zmq_endpoint.cc:447 - bool Datacratic::ZmqNamedProxy::connect(const string&, Datacratic::ConnectionStyle) [1;31mconnecting to monitor/zeromq[0m
+2014-04-22 07:12:02.023 ZMQ ./soa/service/zmq_endpoint.cc:494 - bool Datacratic::ZmqNamedProxy::connect(const string&, Datacratic::ConnectionStyle) [1;31mconnected to tcp://ip-172-31-27-189.ec2.internal:24000[0m
+2014-04-22 07:12:02.026 ZMQ ./soa/service/zmq_endpoint.cc:447 - bool Datacratic::ZmqNamedProxy::connect(const string&, Datacratic::ConnectionStyle) [1;31mconnecting to monitor/zeromq[0m
+2014-04-22 07:12:02.032 ZMQ ./soa/service/zmq_endpoint.cc:494 - bool Datacratic::ZmqNamedProxy::connect(const string&, Datacratic::ConnectionStyle) [1;31mconnected to tcp://ip-172-31-27-189.ec2.internal:24000[0m
+wexists handler returned -101
+2. returning result 
+augmentor frequency-cap-ex has connected
+2014-04-22 07:12:02.090 ZMQ ./soa/service/zmq_endpoint.cc:447 - bool Datacratic::ZmqNamedProxy::connect(const string&, Datacratic::ConnectionStyle) [1;31mconnecting to PostAuctionLoop/events[0m
+agent fixed-price-agent-ex_4898 connected to router
+wexists handler returned -101
+2. returning result 
+2014-04-22 07:12:02.100 ZMQ ./soa/service/zmq_endpoint.cc:447 - bool Datacratic::ZmqNamedProxy::connect(const string&, Datacratic::ConnectionStyle) [1;31mconnecting to agentConfigurationService/listen[0m
+2014-04-22 07:12:02.103 ZMQ ./soa/service/zmq_endpoint.cc:494 - bool Datacratic::ZmqNamedProxy::connect(const string&, Datacratic::ConnectionStyle) [1;31mconnected to tcp://ip-172-31-27-189.ec2.internal:19000[0m
+got configuration message fixed-price-agent-ex_4898
+
+
+agent fixed-price-agent-ex_4898 got new configuration
+2014-04-22 07:12:02.108 ZMQ ./soa/service/zmq_endpoint.cc:447 - bool Datacratic::ZmqNamedProxy::connect(const string&, Datacratic::ConnectionStyle) [1;31mconnecting to PostAuctionLoop/events[0m
+listening on hostname 0.0.0.0 port 12339
+2014-04-22 07:12:02.116 ZMQ ./soa/service/zmq_endpoint.cc:494 - bool Datacratic::ZmqNamedProxy::connect(const string&, Datacratic::ConnectionStyle) [1;31mconnected to tcp://ip-172-31-27-189.ec2.internal:20000[0m
+********* calling addSpendAccount for hello:world for SlaveBanker router.slaveBanker
+error: exception in context Banker addAccount
+error: exception in context Banker addAccount
+error: exception in context Banker addAccount
+error: exception in context Banker addAccount
+exception processing source RestProxy::operationQueue
+terminate called after throwing an instance of 'ML::Exception'
+  what():  connection to '' is unavailable

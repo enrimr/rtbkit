@@ -1,0 +1,619 @@
+bound tcp for http port 9987
+monitor is listening on tcp://*:24000,http://0.0.0.0:9987
+router.augmentationLoop/augmentors/tcp --> [{"transports":[{"addr":"127.0.0.1","hostScope":"ip-172-31-27-189.ec2.internal","name":"tcp","port":18000},{"name":"zeromq","socketType":6,"uri":"tcp://127.0.0.1:18000"}],"zmqConnectUri":"tcp://127.0.0.1:18000"},{"transports":[{"addr":"172.31.27.189","hostScope":"*","name":"tcp","port":18000},{"name":"zeromq","socketType":6,"uri":"tcp://ip-172-31-27-189.ec2.internal:18000"}],"zmqConnectUri":"tcp://ip-172-31-27-189.ec2.internal:18000"}]
+serviceClass/rtbAgentConfiguration/agentConfigurationService --> {"serviceLocation":"mtl","serviceName":"agentConfigurationService","servicePath":"agentConfigurationService"}
+serviceClass/monitor/monitor --> {"serviceLocation":"mtl","serviceName":"monitor","servicePath":"monitor"}
+serviceClass/rtbRequestRouter/router --> {"serviceLocation":"mtl","serviceName":"router","servicePath":"router"}
+serviceClass/adServer/adServer --> {"serviceLocation":"mtl","serviceName":"adServer","servicePath":"adServer"}
+serviceClass/rtbBanker/masterBanker --> {"serviceLocation":"mtl","serviceName":"masterBanker","servicePath":"masterBanker"}
+serviceClass/rtbRouterAugmentation/router.augmentationLoop --> {"serviceLocation":"mtl","serviceName":"router.augmentationLoop","servicePath":"router.augmentationLoop"}
+serviceClass/rtbPostAuctionService/PostAuctionLoop --> {"serviceLocation":"mtl","serviceName":"PostAuctionLoop","servicePath":"PostAuctionLoop"}
+monitor/http/tcp --> [{"httpUri":"http://127.0.0.1:9987","transports":[{"addr":"127.0.0.1","hostScope":"ip-172-31-27-189.ec2.internal","name":"tcp","port":9987},{"name":"http","uri":"http://127.0.0.1:9987"}]},{"httpUri":"http://172.31.27.189:9987","transports":[{"addr":"172.31.27.189","hostScope":"*","name":"tcp","port":9987},{"name":"http","uri":"http://172.31.27.189:9987"}]}]
+monitor/zeromq/tcp --> [{"transports":[{"addr":"127.0.0.1","hostScope":"ip-172-31-27-189.ec2.internal","name":"tcp","port":24000},{"name":"zeromq","socketType":6,"uri":"tcp://127.0.0.1:24000"}],"zmqConnectUri":"tcp://127.0.0.1:24000"},{"transports":[{"addr":"172.31.27.189","hostScope":"*","name":"tcp","port":24000},{"name":"zeromq","socketType":6,"uri":"tcp://ip-172-31-27-189.ec2.internal:24000"}],"zmqConnectUri":"tcp://ip-172-31-27-189.ec2.internal:24000"}]
+masterBanker/http/tcp --> [{"httpUri":"http://127.0.0.1:9985","transports":[{"addr":"127.0.0.1","hostScope":"ip-172-31-27-189.ec2.internal","name":"tcp","port":9985},{"name":"http","uri":"http://127.0.0.1:9985"}]},{"httpUri":"http://172.31.27.189:9985","transports":[{"addr":"172.31.27.189","hostScope":"*","name":"tcp","port":9985},{"name":"http","uri":"http://172.31.27.189:9985"}]}]
+masterBanker/zeromq/tcp --> [{"transports":[{"addr":"127.0.0.1","hostScope":"ip-172-31-27-189.ec2.internal","name":"tcp","port":22000},{"name":"zeromq","socketType":6,"uri":"tcp://127.0.0.1:22000"}],"zmqConnectUri":"tcp://127.0.0.1:22000"},{"transports":[{"addr":"172.31.27.189","hostScope":"*","name":"tcp","port":22000},{"name":"zeromq","socketType":6,"uri":"tcp://ip-172-31-27-189.ec2.internal:22000"}],"zmqConnectUri":"tcp://ip-172-31-27-189.ec2.internal:22000"}]
+adServer/logger/tcp --> [{"transports":[{"addr":"127.0.0.1","hostScope":"ip-172-31-27-189.ec2.internal","name":"tcp","port":25000},{"name":"zeromq","socketType":9,"uri":"tcp://127.0.0.1:25000"}],"zmqConnectUri":"tcp://127.0.0.1:25000"},{"transports":[{"addr":"172.31.27.189","hostScope":"*","name":"tcp","port":25000},{"name":"zeromq","socketType":9,"uri":"tcp://ip-172-31-27-189.ec2.internal:25000"}],"zmqConnectUri":"tcp://ip-172-31-27-189.ec2.internal:25000"}]
+agentConfigurationService/rest/http/tcp --> [{"httpUri":"http://127.0.0.1:9986","transports":[{"addr":"127.0.0.1","hostScope":"ip-172-31-27-189.ec2.internal","name":"tcp","port":9986},{"name":"http","uri":"http://127.0.0.1:9986"}]},{"httpUri":"http://172.31.27.189:9986","transports":[{"addr":"172.31.27.189","hostScope":"*","name":"tcp","port":9986},{"name":"http","uri":"http://172.31.27.189:9986"}]}]
+agentConfigurationService/rest/zeromq/tcp --> [{"transports":[{"addr":"127.0.0.1","hostScope":"ip-172-31-27-189.ec2.internal","name":"tcp","port":23000},{"name":"zeromq","socketType":6,"uri":"tcp://127.0.0.1:23000"}],"zmqConnectUri":"tcp://127.0.0.1:23000"},{"transports":[{"addr":"172.31.27.189","hostScope":"*","name":"tcp","port":23000},{"name":"zeromq","socketType":6,"uri":"tcp://ip-172-31-27-189.ec2.internal:23000"}],"zmqConnectUri":"tcp://ip-172-31-27-189.ec2.internal:23000"}]
+agentConfigurationService/listen/tcp --> [{"transports":[{"addr":"127.0.0.1","hostScope":"ip-172-31-27-189.ec2.internal","name":"tcp","port":19000},{"name":"zeromq","socketType":6,"uri":"tcp://127.0.0.1:19000"}],"zmqConnectUri":"tcp://127.0.0.1:19000"},{"transports":[{"addr":"172.31.27.189","hostScope":"*","name":"tcp","port":19000},{"name":"zeromq","socketType":6,"uri":"tcp://ip-172-31-27-189.ec2.internal:19000"}],"zmqConnectUri":"tcp://ip-172-31-27-189.ec2.internal:19000"}]
+agentConfigurationService/agents/tcp --> [{"transports":[{"addr":"127.0.0.1","hostScope":"ip-172-31-27-189.ec2.internal","name":"tcp","port":15000},{"name":"zeromq","socketType":6,"uri":"tcp://127.0.0.1:15000"}],"zmqConnectUri":"tcp://127.0.0.1:15000"},{"transports":[{"addr":"172.31.27.189","hostScope":"*","name":"tcp","port":15000},{"name":"zeromq","socketType":6,"uri":"tcp://ip-172-31-27-189.ec2.internal:15000"}],"zmqConnectUri":"tcp://ip-172-31-27-189.ec2.internal:15000"}]
+
+
+rtbAgentConfiguration: 
+    agentConfigurationService OK  2014-04-22 11:28:46  Alive
+rtbBanker: 
+    masterBanker         OK  2014-04-22 11:28:47  Banker persistence: OK
+rtbDataLogger: 
+    data_logger          OK  2014-04-22 11:28:47  Alive
+rtbPostAuctionService: 
+rtbRequestRouter: 
+
+
+rtbAgentConfiguration: 
+    agentConfigurationService OK  2014-04-22 11:28:56  Alive
+rtbBanker: 
+    masterBanker         OK  2014-04-22 11:28:57  Banker persistence: OK
+rtbDataLogger: 
+    data_logger          OK  2014-04-22 11:28:57  Alive
+rtbPostAuctionService: 
+rtbRequestRouter: 
+
+
+rtbAgentConfiguration: 
+    agentConfigurationService OK  2014-04-22 11:29:06  Alive
+rtbBanker: 
+    masterBanker         OK  2014-04-22 11:29:07  Banker persistence: OK
+rtbDataLogger: 
+    data_logger          OK  2014-04-22 11:29:07  Alive
+rtbPostAuctionService: 
+rtbRequestRouter: 
+
+
+rtbAgentConfiguration: 
+    agentConfigurationService OK  2014-04-22 11:29:16  Alive
+rtbBanker: 
+    masterBanker         OK  2014-04-22 11:29:17  Banker persistence: OK
+rtbDataLogger: 
+    data_logger          OK  2014-04-22 11:29:17  Alive
+rtbPostAuctionService: 
+rtbRequestRouter: 
+
+
+rtbAgentConfiguration: 
+    agentConfigurationService OK  2014-04-22 11:29:26  Alive
+rtbBanker: 
+    masterBanker         OK  2014-04-22 11:29:27  Banker persistence: OK
+rtbDataLogger: 
+    data_logger          OK  2014-04-22 11:29:27  Alive
+rtbPostAuctionService: 
+rtbRequestRouter: 
+
+
+rtbAgentConfiguration: 
+    agentConfigurationService OK  2014-04-22 11:29:36  Alive
+rtbBanker: 
+    masterBanker         OK  2014-04-22 11:29:37  Banker persistence: OK
+rtbDataLogger: 
+    data_logger          OK  2014-04-22 11:29:37  Alive
+rtbPostAuctionService: 
+rtbRequestRouter: 
+
+
+rtbAgentConfiguration: 
+    agentConfigurationService OK  2014-04-22 11:29:46  Alive
+rtbBanker: 
+    masterBanker         OK  2014-04-22 11:29:47  Banker persistence: OK
+rtbDataLogger: 
+    data_logger          OK  2014-04-22 11:29:47  Alive
+rtbPostAuctionService: 
+rtbRequestRouter: 
+
+
+rtbAgentConfiguration: 
+    agentConfigurationService OK  2014-04-22 11:29:56  Alive
+rtbBanker: 
+    masterBanker         OK  2014-04-22 11:29:57  Banker persistence: OK
+rtbDataLogger: 
+    data_logger          OK  2014-04-22 11:29:57  Alive
+rtbPostAuctionService: 
+rtbRequestRouter: 
+
+
+rtbAgentConfiguration: 
+    agentConfigurationService OK  2014-04-22 11:30:06  Alive
+rtbBanker: 
+    masterBanker         OK  2014-04-22 11:30:07  Banker persistence: OK
+rtbDataLogger: 
+    data_logger          OK  2014-04-22 11:30:07  Alive
+rtbPostAuctionService: 
+rtbRequestRouter: 
+
+
+rtbAgentConfiguration: 
+    agentConfigurationService OK  2014-04-22 11:30:16  Alive
+rtbBanker: 
+    masterBanker         OK  2014-04-22 11:30:17  Banker persistence: OK
+rtbDataLogger: 
+    data_logger          OK  2014-04-22 11:30:17  Alive
+rtbPostAuctionService: 
+rtbRequestRouter: 
+
+
+rtbAgentConfiguration: 
+    agentConfigurationService OK  2014-04-22 11:30:26  Alive
+rtbBanker: 
+    masterBanker         OK  2014-04-22 11:30:27  Banker persistence: OK
+rtbDataLogger: 
+    data_logger          OK  2014-04-22 11:30:27  Alive
+rtbPostAuctionService: 
+rtbRequestRouter: 
+
+
+rtbAgentConfiguration: 
+    agentConfigurationService OK  2014-04-22 11:30:36  Alive
+rtbBanker: 
+    masterBanker         OK  2014-04-22 11:30:37  Banker persistence: OK
+rtbDataLogger: 
+    data_logger          OK  2014-04-22 11:30:37  Alive
+rtbPostAuctionService: 
+rtbRequestRouter: 
+
+
+rtbAgentConfiguration: 
+    agentConfigurationService OK  2014-04-22 11:30:46  Alive
+rtbBanker: 
+    masterBanker         OK  2014-04-22 11:30:47  Banker persistence: OK
+rtbDataLogger: 
+    data_logger          OK  2014-04-22 11:30:47  Alive
+rtbPostAuctionService: 
+rtbRequestRouter: 
+
+
+rtbAgentConfiguration: 
+    agentConfigurationService OK  2014-04-22 11:30:56  Alive
+rtbBanker: 
+    masterBanker         OK  2014-04-22 11:30:57  Banker persistence: OK
+rtbDataLogger: 
+    data_logger          OK  2014-04-22 11:30:57  Alive
+rtbPostAuctionService: 
+rtbRequestRouter: 
+
+
+rtbAgentConfiguration: 
+    agentConfigurationService OK  2014-04-22 11:31:06  Alive
+rtbBanker: 
+    masterBanker         OK  2014-04-22 11:31:07  Banker persistence: OK
+rtbDataLogger: 
+    data_logger          OK  2014-04-22 11:31:07  Alive
+rtbPostAuctionService: 
+rtbRequestRouter: 
+
+
+rtbAgentConfiguration: 
+    agentConfigurationService OK  2014-04-22 11:31:16  Alive
+rtbBanker: 
+    masterBanker         OK  2014-04-22 11:31:17  Banker persistence: OK
+rtbDataLogger: 
+    data_logger          OK  2014-04-22 11:31:17  Alive
+rtbPostAuctionService: 
+rtbRequestRouter: 
+
+
+rtbAgentConfiguration: 
+    agentConfigurationService OK  2014-04-22 11:31:26  Alive
+rtbBanker: 
+    masterBanker         OK  2014-04-22 11:31:27  Banker persistence: OK
+rtbDataLogger: 
+    data_logger          OK  2014-04-22 11:31:27  Alive
+rtbPostAuctionService: 
+rtbRequestRouter: 
+
+
+rtbAgentConfiguration: 
+    agentConfigurationService OK  2014-04-22 11:31:36  Alive
+rtbBanker: 
+    masterBanker         OK  2014-04-22 11:31:37  Banker persistence: OK
+rtbDataLogger: 
+    data_logger          OK  2014-04-22 11:31:37  Alive
+rtbPostAuctionService: 
+rtbRequestRouter: 
+
+
+rtbAgentConfiguration: 
+    agentConfigurationService OK  2014-04-22 11:31:46  Alive
+rtbBanker: 
+    masterBanker         OK  2014-04-22 11:31:47  Banker persistence: OK
+rtbDataLogger: 
+    data_logger          OK  2014-04-22 11:31:47  Alive
+rtbPostAuctionService: 
+rtbRequestRouter: 
+
+
+rtbAgentConfiguration: 
+    agentConfigurationService OK  2014-04-22 11:31:56  Alive
+rtbBanker: 
+    masterBanker         OK  2014-04-22 11:31:57  Banker persistence: OK
+rtbDataLogger: 
+    data_logger          OK  2014-04-22 11:31:57  Alive
+rtbPostAuctionService: 
+rtbRequestRouter: 
+
+
+rtbAgentConfiguration: 
+    agentConfigurationService OK  2014-04-22 11:32:06  Alive
+rtbBanker: 
+    masterBanker         OK  2014-04-22 11:32:07  Banker persistence: OK
+rtbDataLogger: 
+    data_logger          OK  2014-04-22 11:32:07  Alive
+rtbPostAuctionService: 
+rtbRequestRouter: 
+
+
+rtbAgentConfiguration: 
+    agentConfigurationService OK  2014-04-22 11:32:16  Alive
+rtbBanker: 
+    masterBanker         OK  2014-04-22 11:32:17  Banker persistence: OK
+rtbDataLogger: 
+    data_logger          OK  2014-04-22 11:32:17  Alive
+rtbPostAuctionService: 
+rtbRequestRouter: 
+
+
+rtbAgentConfiguration: 
+    agentConfigurationService OK  2014-04-22 11:32:26  Alive
+rtbBanker: 
+    masterBanker         OK  2014-04-22 11:32:27  Banker persistence: OK
+rtbDataLogger: 
+    data_logger          OK  2014-04-22 11:32:27  Alive
+rtbPostAuctionService: 
+rtbRequestRouter: 
+
+
+rtbAgentConfiguration: 
+    agentConfigurationService OK  2014-04-22 11:32:36  Alive
+rtbBanker: 
+    masterBanker         OK  2014-04-22 11:32:37  Banker persistence: OK
+rtbDataLogger: 
+    data_logger          OK  2014-04-22 11:32:37  Alive
+rtbPostAuctionService: 
+rtbRequestRouter: 
+
+
+rtbAgentConfiguration: 
+    agentConfigurationService OK  2014-04-22 11:32:46  Alive
+rtbBanker: 
+    masterBanker         OK  2014-04-22 11:32:47  Banker persistence: OK
+rtbDataLogger: 
+    data_logger          OK  2014-04-22 11:32:47  Alive
+rtbPostAuctionService: 
+rtbRequestRouter: 
+
+
+rtbAgentConfiguration: 
+    agentConfigurationService OK  2014-04-22 11:32:56  Alive
+rtbBanker: 
+    masterBanker         OK  2014-04-22 11:32:57  Banker persistence: OK
+rtbDataLogger: 
+    data_logger          OK  2014-04-22 11:32:57  Alive
+rtbPostAuctionService: 
+rtbRequestRouter: 
+
+
+rtbAgentConfiguration: 
+    agentConfigurationService OK  2014-04-22 11:33:06  Alive
+rtbBanker: 
+    masterBanker         OK  2014-04-22 11:33:07  Banker persistence: OK
+rtbDataLogger: 
+    data_logger          OK  2014-04-22 11:33:07  Alive
+rtbPostAuctionService: 
+rtbRequestRouter: 
+
+
+rtbAgentConfiguration: 
+    agentConfigurationService OK  2014-04-22 11:33:16  Alive
+rtbBanker: 
+    masterBanker         OK  2014-04-22 11:33:17  Banker persistence: OK
+rtbDataLogger: 
+    data_logger          OK  2014-04-22 11:33:17  Alive
+rtbPostAuctionService: 
+rtbRequestRouter: 
+
+
+rtbAgentConfiguration: 
+    agentConfigurationService OK  2014-04-22 11:33:26  Alive
+rtbBanker: 
+    masterBanker         OK  2014-04-22 11:33:27  Banker persistence: OK
+rtbDataLogger: 
+    data_logger          OK  2014-04-22 11:33:27  Alive
+rtbPostAuctionService: 
+rtbRequestRouter: 
+
+
+rtbAgentConfiguration: 
+    agentConfigurationService OK  2014-04-22 11:33:36  Alive
+rtbBanker: 
+    masterBanker         OK  2014-04-22 11:33:37  Banker persistence: OK
+rtbDataLogger: 
+    data_logger          OK  2014-04-22 11:33:37  Alive
+rtbPostAuctionService: 
+rtbRequestRouter: 
+
+
+rtbAgentConfiguration: 
+    agentConfigurationService OK  2014-04-22 11:33:46  Alive
+rtbBanker: 
+    masterBanker         OK  2014-04-22 11:33:47  Banker persistence: OK
+rtbDataLogger: 
+    data_logger          OK  2014-04-22 11:33:47  Alive
+rtbPostAuctionService: 
+rtbRequestRouter: 
+
+
+rtbAgentConfiguration: 
+    agentConfigurationService OK  2014-04-22 11:33:56  Alive
+rtbBanker: 
+    masterBanker         OK  2014-04-22 11:33:57  Banker persistence: OK
+rtbDataLogger: 
+    data_logger          OK  2014-04-22 11:33:57  Alive
+rtbPostAuctionService: 
+rtbRequestRouter: 
+
+
+rtbAgentConfiguration: 
+    agentConfigurationService OK  2014-04-22 11:34:06  Alive
+rtbBanker: 
+    masterBanker         OK  2014-04-22 11:34:07  Banker persistence: OK
+rtbDataLogger: 
+    data_logger          OK  2014-04-22 11:34:07  Alive
+rtbPostAuctionService: 
+rtbRequestRouter: 
+
+
+rtbAgentConfiguration: 
+    agentConfigurationService OK  2014-04-22 11:34:16  Alive
+rtbBanker: 
+    masterBanker         OK  2014-04-22 11:34:17  Banker persistence: OK
+rtbDataLogger: 
+    data_logger          OK  2014-04-22 11:34:17  Alive
+rtbPostAuctionService: 
+rtbRequestRouter: 
+
+
+rtbAgentConfiguration: 
+    agentConfigurationService OK  2014-04-22 11:34:26  Alive
+rtbBanker: 
+    masterBanker         OK  2014-04-22 11:34:27  Banker persistence: OK
+rtbDataLogger: 
+    data_logger          OK  2014-04-22 11:34:27  Alive
+rtbPostAuctionService: 
+rtbRequestRouter: 
+
+
+rtbAgentConfiguration: 
+    agentConfigurationService OK  2014-04-22 11:34:36  Alive
+rtbBanker: 
+    masterBanker         OK  2014-04-22 11:34:37  Banker persistence: OK
+rtbDataLogger: 
+    data_logger          OK  2014-04-22 11:34:37  Alive
+rtbPostAuctionService: 
+rtbRequestRouter: 
+
+
+rtbAgentConfiguration: 
+    agentConfigurationService OK  2014-04-22 11:34:46  Alive
+rtbBanker: 
+    masterBanker         OK  2014-04-22 11:34:47  Banker persistence: OK
+rtbDataLogger: 
+    data_logger          OK  2014-04-22 11:34:47  Alive
+rtbPostAuctionService: 
+rtbRequestRouter: 
+
+
+rtbAgentConfiguration: 
+    agentConfigurationService OK  2014-04-22 11:34:56  Alive
+rtbBanker: 
+    masterBanker         OK  2014-04-22 11:34:57  Banker persistence: OK
+rtbDataLogger: 
+    data_logger          OK  2014-04-22 11:34:57  Alive
+rtbPostAuctionService: 
+rtbRequestRouter: 
+
+
+rtbAgentConfiguration: 
+    agentConfigurationService OK  2014-04-22 11:35:06  Alive
+rtbBanker: 
+    masterBanker         OK  2014-04-22 11:35:07  Banker persistence: OK
+rtbDataLogger: 
+    data_logger          OK  2014-04-22 11:35:07  Alive
+rtbPostAuctionService: 
+rtbRequestRouter: 
+
+
+rtbAgentConfiguration: 
+    agentConfigurationService OK  2014-04-22 11:35:16  Alive
+rtbBanker: 
+    masterBanker         OK  2014-04-22 11:35:17  Banker persistence: OK
+rtbDataLogger: 
+    data_logger          OK  2014-04-22 11:35:17  Alive
+rtbPostAuctionService: 
+rtbRequestRouter: 
+
+
+rtbAgentConfiguration: 
+    agentConfigurationService OK  2014-04-22 11:35:26  Alive
+rtbBanker: 
+    masterBanker         OK  2014-04-22 11:35:27  Banker persistence: OK
+rtbDataLogger: 
+    data_logger          OK  2014-04-22 11:35:27  Alive
+rtbPostAuctionService: 
+rtbRequestRouter: 
+
+
+rtbAgentConfiguration: 
+    agentConfigurationService OK  2014-04-22 11:35:36  Alive
+rtbBanker: 
+    masterBanker         OK  2014-04-22 11:35:37  Banker persistence: OK
+rtbDataLogger: 
+    data_logger          OK  2014-04-22 11:35:37  Alive
+rtbPostAuctionService: 
+rtbRequestRouter: 
+
+
+rtbAgentConfiguration: 
+    agentConfigurationService OK  2014-04-22 11:35:46  Alive
+rtbBanker: 
+    masterBanker         OK  2014-04-22 11:35:47  Banker persistence: OK
+rtbDataLogger: 
+    data_logger          OK  2014-04-22 11:35:47  Alive
+rtbPostAuctionService: 
+rtbRequestRouter: 
+
+
+rtbAgentConfiguration: 
+    agentConfigurationService OK  2014-04-22 11:35:56  Alive
+rtbBanker: 
+    masterBanker         OK  2014-04-22 11:35:57  Banker persistence: OK
+rtbDataLogger: 
+    data_logger          OK  2014-04-22 11:35:57  Alive
+rtbPostAuctionService: 
+rtbRequestRouter: 
+
+
+rtbAgentConfiguration: 
+    agentConfigurationService OK  2014-04-22 11:36:06  Alive
+rtbBanker: 
+    masterBanker         OK  2014-04-22 11:36:07  Banker persistence: OK
+rtbDataLogger: 
+    data_logger          OK  2014-04-22 11:36:07  Alive
+rtbPostAuctionService: 
+rtbRequestRouter: 
+
+
+rtbAgentConfiguration: 
+    agentConfigurationService OK  2014-04-22 11:36:16  Alive
+rtbBanker: 
+    masterBanker         OK  2014-04-22 11:36:17  Banker persistence: OK
+rtbDataLogger: 
+    data_logger          OK  2014-04-22 11:36:17  Alive
+rtbPostAuctionService: 
+rtbRequestRouter: 
+
+
+rtbAgentConfiguration: 
+    agentConfigurationService OK  2014-04-22 11:36:26  Alive
+rtbBanker: 
+    masterBanker         OK  2014-04-22 11:36:27  Banker persistence: OK
+rtbDataLogger: 
+    data_logger          OK  2014-04-22 11:36:27  Alive
+rtbPostAuctionService: 
+rtbRequestRouter: 
+
+
+rtbAgentConfiguration: 
+    agentConfigurationService OK  2014-04-22 11:36:36  Alive
+rtbBanker: 
+    masterBanker         OK  2014-04-22 11:36:37  Banker persistence: OK
+rtbDataLogger: 
+    data_logger          OK  2014-04-22 11:36:37  Alive
+rtbPostAuctionService: 
+rtbRequestRouter: 
+
+
+rtbAgentConfiguration: 
+    agentConfigurationService OK  2014-04-22 11:36:46  Alive
+rtbBanker: 
+    masterBanker         OK  2014-04-22 11:36:47  Banker persistence: OK
+rtbDataLogger: 
+    data_logger          OK  2014-04-22 11:36:47  Alive
+rtbPostAuctionService: 
+rtbRequestRouter: 
+
+
+rtbAgentConfiguration: 
+    agentConfigurationService OK  2014-04-22 11:36:56  Alive
+rtbBanker: 
+    masterBanker         OK  2014-04-22 11:36:57  Banker persistence: OK
+rtbDataLogger: 
+    data_logger          OK  2014-04-22 11:36:57  Alive
+rtbPostAuctionService: 
+rtbRequestRouter: 
+
+
+rtbAgentConfiguration: 
+    agentConfigurationService OK  2014-04-22 11:37:06  Alive
+rtbBanker: 
+    masterBanker         OK  2014-04-22 11:37:07  Banker persistence: OK
+rtbDataLogger: 
+    data_logger          OK  2014-04-22 11:37:07  Alive
+rtbPostAuctionService: 
+rtbRequestRouter: 
+
+
+rtbAgentConfiguration: 
+    agentConfigurationService OK  2014-04-22 11:37:16  Alive
+rtbBanker: 
+    masterBanker         OK  2014-04-22 11:37:17  Banker persistence: OK
+rtbDataLogger: 
+    data_logger          OK  2014-04-22 11:37:17  Alive
+rtbPostAuctionService: 
+rtbRequestRouter: 
+
+
+rtbAgentConfiguration: 
+    agentConfigurationService OK  2014-04-22 11:37:26  Alive
+rtbBanker: 
+    masterBanker         OK  2014-04-22 11:37:27  Banker persistence: OK
+rtbDataLogger: 
+    data_logger          OK  2014-04-22 11:37:27  Alive
+rtbPostAuctionService: 
+rtbRequestRouter: 
+
+
+rtbAgentConfiguration: 
+    agentConfigurationService OK  2014-04-22 11:37:36  Alive
+rtbBanker: 
+    masterBanker         OK  2014-04-22 11:37:37  Banker persistence: OK
+rtbDataLogger: 
+    data_logger          OK  2014-04-22 11:37:37  Alive
+rtbPostAuctionService: 
+rtbRequestRouter: 
+
+
+rtbAgentConfiguration: 
+    agentConfigurationService OK  2014-04-22 11:37:46  Alive
+rtbBanker: 
+    masterBanker         OK  2014-04-22 11:37:47  Banker persistence: OK
+rtbDataLogger: 
+    data_logger          OK  2014-04-22 11:37:47  Alive
+rtbPostAuctionService: 
+rtbRequestRouter: 
+
+
+rtbAgentConfiguration: 
+    agentConfigurationService OK  2014-04-22 11:37:56  Alive
+rtbBanker: 
+    masterBanker         OK  2014-04-22 11:37:57  Banker persistence: OK
+rtbDataLogger: 
+    data_logger          OK  2014-04-22 11:37:57  Alive
+rtbPostAuctionService: 
+rtbRequestRouter: 
+
+
+rtbAgentConfiguration: 
+    agentConfigurationService OK  2014-04-22 11:38:06  Alive
+rtbBanker: 
+    masterBanker         OK  2014-04-22 11:38:07  Banker persistence: OK
+rtbDataLogger: 
+    data_logger          OK  2014-04-22 11:38:07  Alive
+rtbPostAuctionService: 
+rtbRequestRouter: 
+
+
+rtbAgentConfiguration: 
+    agentConfigurationService OK  2014-04-22 11:38:16  Alive
+rtbBanker: 
+    masterBanker         OK  2014-04-22 11:38:17  Banker persistence: OK
+rtbDataLogger: 
+    data_logger          OK  2014-04-22 11:38:17  Alive
+rtbPostAuctionService: 
+rtbRequestRouter: 
+
+
+rtbAgentConfiguration: 
+    agentConfigurationService OK  2014-04-22 11:38:26  Alive
+rtbBanker: 
+    masterBanker         OK  2014-04-22 11:38:27  Banker persistence: OK
+rtbDataLogger: 
+    data_logger          OK  2014-04-22 11:38:27  Alive
+rtbPostAuctionService: 
+rtbRequestRouter: 
+
+
+rtbAgentConfiguration: 
+    agentConfigurationService OK  2014-04-22 11:38:36  Alive
+rtbBanker: 
+    masterBanker         OK  2014-04-22 11:38:37  Banker persistence: OK
+rtbDataLogger: 
+    data_logger          OK  2014-04-22 11:38:37  Alive
+rtbPostAuctionService: 
+rtbRequestRouter: 

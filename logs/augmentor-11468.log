@@ -1,0 +1,34 @@
+2014-04-22 08:24:42.838 ZMQ ./soa/service/zmq_endpoint.cc:447 - bool Datacratic::ZmqNamedProxy::connect(const string&, Datacratic::ConnectionStyle) [1;31mconnecting to agentConfigurationService/listen[0m
+wexists handler returned -101
+2. returning result 
+2014-04-22 08:24:42.846 ZMQ Trace ./soa/service/zmq_endpoint.cc:814 - void Datacratic::ZmqMultipleNamedClientBusProxy::watchServiceProvider(const string&, const string&) [1;31mconnecting to router.augmentationLoop / router.augmentationLoop[0m
+2014-04-22 08:24:42.846 ZMQ ./soa/service/zmq_endpoint.cc:447 - bool Datacratic::ZmqNamedProxy::connect(const string&, Datacratic::ConnectionStyle) [1;31mconnecting to router.augmentationLoop/augmentors[0m
+wexists handler returned -101
+2. returning result 
+2014-04-22 08:24:42.855 ZMQ ./soa/service/zmq_endpoint.cc:447 - bool Datacratic::ZmqNamedProxy::connect(const string&, Datacratic::ConnectionStyle) [1;31mconnecting to router.augmentationLoop/augmentors[0m
+2014-04-22 08:24:42.871 ZMQ ./soa/service/zmq_endpoint.cc:494 - bool Datacratic::ZmqNamedProxy::connect(const string&, Datacratic::ConnectionStyle) [1;31mconnected to tcp://ip-172-31-27-189.ec2.internal:18000[0m
+2014-04-22 08:24:42.902 ZMQ ./soa/service/zmq_endpoint.cc:447 - bool Datacratic::ZmqNamedProxy::connect(const string&, Datacratic::ConnectionStyle) [1;31mconnecting to agentConfigurationService/listen[0m
+wexists handler returned -101
+2. returning result 
+warning: could not connect to PostAuctionLoop/logger immediately
+2014-04-22 08:24:42.913 ZMQ ./soa/service/zmq_endpoint.cc:494 - bool Datacratic::ZmqNamedProxy::connect(const string&, Datacratic::ConnectionStyle) [1;31mconnected to tcp://ip-172-31-27-189.ec2.internal:19000[0m
+got configuration message fixed-price-agent-ex_11474
+2014-04-22 08:25:13.274 ZMQ Trace ./soa/service/zmq_endpoint.cc:814 - void Datacratic::ZmqMultipleNamedClientBusProxy::watchServiceProvider(const string&, const string&) [1;31mconnecting to router.augmentationLoop / router.augmentationLoop[0m
+2014-04-22 08:25:13.274 ZMQ ./soa/service/zmq_endpoint.cc:447 - bool Datacratic::ZmqNamedProxy::connect(const string&, Datacratic::ConnectionStyle) [1;31mconnecting to router.augmentationLoop/augmentors[0m
+wexists handler returned -101
+2. returning result 
+2014-04-22 08:25:13.288 ZMQ ./soa/service/zmq_endpoint.cc:447 - bool Datacratic::ZmqNamedProxy::connect(const string&, Datacratic::ConnectionStyle) [1;31mconnecting to router.augmentationLoop/augmentors[0m
+2014-04-22 08:25:13.299 ZMQ ./soa/service/zmq_endpoint.cc:494 - bool Datacratic::ZmqNamedProxy::connect(const string&, Datacratic::ConnectionStyle) [1;31mconnected to tcp://ip-172-31-27-189.ec2.internal:18000[0m
+2014-04-22 08:25:43.638 ZMQ Trace ./soa/service/zmq_endpoint.cc:814 - void Datacratic::ZmqMultipleNamedClientBusProxy::watchServiceProvider(const string&, const string&) [1;31mconnecting to router.augmentationLoop / router.augmentationLoop[0m
+2014-04-22 08:25:43.638 ZMQ ./soa/service/zmq_endpoint.cc:447 - bool Datacratic::ZmqNamedProxy::connect(const string&, Datacratic::ConnectionStyle) [1;31mconnecting to router.augmentationLoop/augmentors[0m
+wexists handler returned -101
+2. returning result 
+2014-04-22 08:25:43.652 ZMQ ./soa/service/zmq_endpoint.cc:447 - bool Datacratic::ZmqNamedProxy::connect(const string&, Datacratic::ConnectionStyle) [1;31mconnecting to router.augmentationLoop/augmentors[0m
+2014-04-22 08:25:43.655 ZMQ ./soa/service/zmq_endpoint.cc:494 - bool Datacratic::ZmqNamedProxy::connect(const string&, Datacratic::ConnectionStyle) [1;31mconnected to tcp://ip-172-31-27-189.ec2.internal:18000[0m
+2014-04-22 08:26:14.001 ZMQ Trace ./soa/service/zmq_endpoint.cc:814 - void Datacratic::ZmqMultipleNamedClientBusProxy::watchServiceProvider(const string&, const string&) [1;31mconnecting to router.augmentationLoop / router.augmentationLoop[0m
+2014-04-22 08:26:14.001 ZMQ ./soa/service/zmq_endpoint.cc:447 - bool Datacratic::ZmqNamedProxy::connect(const string&, Datacratic::ConnectionStyle) [1;31mconnecting to router.augmentationLoop/augmentors[0m
+wexists handler returned -101
+2. returning result 
+2014-04-22 08:26:14.015 ZMQ ./soa/service/zmq_endpoint.cc:447 - bool Datacratic::ZmqNamedProxy::connect(const string&, Datacratic::ConnectionStyle) [1;31mconnecting to router.augmentationLoop/augmentors[0m
+2014-04-22 08:26:14.017 ZMQ ./soa/service/zmq_endpoint.cc:447 - bool Datacratic::ZmqNamedProxy::connect(const string&, Datacratic::ConnectionStyle) [1;31mconnecting to router.augmentationLoop/augmentors[0m
+2014-04-22 08:26:14.019 ZMQ ./soa/service/zmq_endpoint.cc:494 - bool Datacratic::ZmqNamedProxy::connect(const string&, Datacratic::ConnectionStyle) [1;31mconnected to tcp://ip-172-31-27-189.ec2.internal:18000[0m

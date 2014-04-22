@@ -1,0 +1,110 @@
+2014-04-22 07:21:12.865 ZMQ ./soa/service/zmq_endpoint.cc:447 - bool Datacratic::ZmqNamedProxy::connect(const string&, Datacratic::ConnectionStyle) [1;31mconnecting to monitor/zeromq[0m
+2014-04-22 07:21:12.873 ZMQ ./soa/service/zmq_endpoint.cc:494 - bool Datacratic::ZmqNamedProxy::connect(const string&, Datacratic::ConnectionStyle) [1;31mconnected to tcp://ip-172-31-27-189.ec2.internal:24000[0m
+2014-04-22 07:21:12.876 ZMQ ./soa/service/zmq_endpoint.cc:447 - bool Datacratic::ZmqNamedProxy::connect(const string&, Datacratic::ConnectionStyle) [1;31mconnecting to monitor/zeromq[0m
+2014-04-22 07:21:12.879 ZMQ ./soa/service/zmq_endpoint.cc:494 - bool Datacratic::ZmqNamedProxy::connect(const string&, Datacratic::ConnectionStyle) [1;31mconnected to tcp://ip-172-31-27-189.ec2.internal:24000[0m
+2014-04-22 07:21:12.884 ZMQ ./soa/service/zmq_endpoint.cc:447 - bool Datacratic::ZmqNamedProxy::connect(const string&, Datacratic::ConnectionStyle) [1;31mconnecting to masterBanker/zeromq[0m
+2014-04-22 07:21:12.889 ZMQ ./soa/service/zmq_endpoint.cc:494 - bool Datacratic::ZmqNamedProxy::connect(const string&, Datacratic::ConnectionStyle) [1;31mconnected to tcp://ip-172-31-27-189.ec2.internal:22000[0m
+augmentor frequency-cap-ex has connected
+2014-04-22 07:21:12.927 ZMQ ./soa/service/zmq_endpoint.cc:447 - bool Datacratic::ZmqNamedProxy::connect(const string&, Datacratic::ConnectionStyle) [1;31mconnecting to PostAuctionLoop/events[0m
+2014-04-22 07:21:12.929 ZMQ ./soa/service/zmq_endpoint.cc:494 - bool Datacratic::ZmqNamedProxy::connect(const string&, Datacratic::ConnectionStyle) [1;31mconnected to tcp://ip-172-31-27-189.ec2.internal:20000[0m
+agent fixed-price-agent-ex_5886 connected to router
+2014-04-22 07:21:12.932 ZMQ ./soa/service/zmq_endpoint.cc:447 - bool Datacratic::ZmqNamedProxy::connect(const string&, Datacratic::ConnectionStyle) [1;31mconnecting to agentConfigurationService/listen[0m
+2014-04-22 07:21:12.934 ZMQ ./soa/service/zmq_endpoint.cc:494 - bool Datacratic::ZmqNamedProxy::connect(const string&, Datacratic::ConnectionStyle) [1;31mconnected to tcp://ip-172-31-27-189.ec2.internal:19000[0m
+got configuration message fixed-price-agent-ex_5886
+
+
+agent fixed-price-agent-ex_5886 got new configuration
+listening on hostname 0.0.0.0 port 12339
+********* calling addSpendAccount for hello:world for SlaveBanker router.slaveBanker
+total of 9.99698e+06 microseconds and 407 sleeps
+BID                                 108      15270   0.15%   141.39us/call
+CONFIG                                1        397   0.00%   397.00us/call
+HEARTBEAT                            10        198   0.00%    19.80us/call
+HELLO                                 1        531   0.01%   531.00us/call
+PONG0                                 9        221   0.00%    24.56us/call
+PONG1                                 9        169   0.00%    18.78us/call
+asleep                              416    9882114  98.85% 23755.08us/call
+checks                              415        808   0.01%     1.95us/call
+doConfig                            416       1275   0.01%     3.06us/call
+doStartBidding                      416       9712   0.10%    23.35us/call
+doSubmitted                         416      86280   0.86%   207.40us/call
+total of 9.99193e+06 microseconds and 405 sleeps
+BID                                 111      15313   0.15%   137.95us/call
+HEARTBEAT                            10        206   0.00%    20.60us/call
+PONG0                                10        213   0.00%    21.30us/call
+PONG1                                10        123   0.00%    12.30us/call
+asleep                              423    9877644  98.86% 23351.40us/call
+checks                              423       1058   0.01%     2.50us/call
+doConfig                            423        187   0.00%     0.44us/call
+doStartBidding                      423       9586   0.10%    22.66us/call
+doSubmitted                         423      87603   0.88%   207.10us/call
+total of 1.00426e+07 microseconds and 399 sleeps
+BID                                 106      14603   0.15%   137.76us/call
+HEARTBEAT                            10        214   0.00%    21.40us/call
+PONG0                                10        227   0.00%    22.70us/call
+PONG1                                10        155   0.00%    15.50us/call
+asleep                              414    9929044  98.87% 23983.20us/call
+checks                              414        942   0.01%     2.28us/call
+doConfig                            414        331   0.00%     0.80us/call
+doStartBidding                      414       9360   0.09%    22.61us/call
+doSubmitted                         414      87707   0.87%   211.85us/call
+total of 1.00123e+07 microseconds and 417 sleeps
+BID                                 109      14951   0.15%   137.17us/call
+HEARTBEAT                            10        221   0.00%    22.10us/call
+PONG0                                10        244   0.00%    24.40us/call
+PONG1                                10        174   0.00%    17.40us/call
+asleep                              421    9896683  98.85% 23507.56us/call
+checks                              421        954   0.01%     2.27us/call
+doConfig                            421        197   0.00%     0.47us/call
+doStartBidding                      421       9583   0.10%    22.76us/call
+doSubmitted                         421      89272   0.89%   212.05us/call
+total of 9.99779e+06 microseconds and 433 sleeps
+BID                                 120      17158   0.17%   142.98us/call
+HEARTBEAT                            10        191   0.00%    19.10us/call
+PONG0                                10        272   0.00%    27.20us/call
+PONG1                                10        148   0.00%    14.80us/call
+asleep                              441    9879349  98.82% 22402.15us/call
+checks                              441       1022   0.01%     2.32us/call
+doConfig                            441        157   0.00%     0.36us/call
+doStartBidding                      441      10401   0.10%    23.59us/call
+doSubmitted                         441      89092   0.89%   202.02us/call
+total of 9.99383e+06 microseconds and 380 sleeps
+BID                                  93      13095   0.13%   140.81us/call
+HEARTBEAT                            10        215   0.00%    21.50us/call
+PONG0                                10        297   0.00%    29.70us/call
+PONG1                                10        153   0.00%    15.30us/call
+asleep                              388    9880395  98.86% 25464.94us/call
+checks                              388       1142   0.01%     2.94us/call
+doConfig                            388        134   0.00%     0.35us/call
+doStartBidding                      388       8339   0.08%    21.49us/call
+doSubmitted                         388      90063   0.90%   232.12us/call
+total of 9.99767e+06 microseconds and 361 sleeps
+BID                                  88      12256   0.12%   139.27us/call
+HEARTBEAT                            10        243   0.00%    24.30us/call
+PONG0                                 9        204   0.00%    22.67us/call
+PONG1                                 9        137   0.00%    15.22us/call
+asleep                              375    9887363  98.90% 26366.30us/call
+checks                              375        856   0.01%     2.28us/call
+doConfig                            375        135   0.00%     0.36us/call
+doStartBidding                      375       7824   0.08%    20.86us/call
+doSubmitted                         375      88653   0.89%   236.41us/call
+total of 9.99767e+06 microseconds and 367 sleeps
+BID                                  91      12848   0.13%   141.19us/call
+HEARTBEAT                            10        204   0.00%    20.40us/call
+PONG0                                10        196   0.00%    19.60us/call
+PONG1                                10        146   0.00%    14.60us/call
+asleep                              384    9885719  98.88% 25744.06us/call
+checks                              384        883   0.01%     2.30us/call
+doConfig                            384        168   0.00%     0.44us/call
+doStartBidding                      384       8041   0.08%    20.94us/call
+doSubmitted                         384      89462   0.89%   232.97us/call
+total of 9.99228e+06 microseconds and 414 sleeps
+BID                                 108      14896   0.15%   137.93us/call
+HEARTBEAT                            10        209   0.00%    20.90us/call
+PONG0                                10        252   0.00%    25.20us/call
+PONG1                                10        205   0.00%    20.50us/call
+asleep                              418    9875829  98.83% 23626.39us/call
+checks                              418       1110   0.01%     2.66us/call
+doConfig                            418        150   0.00%     0.36us/call
+doStartBidding                      418       9484   0.09%    22.69us/call
+doSubmitted                         418      90147   0.90%   215.66us/call

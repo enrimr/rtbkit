@@ -1,0 +1,21 @@
+bound tcp for http port 9987
+monitor is listening on tcp://*:24000,http://0.0.0.0:9987
+serviceClass/monitor/monitor --> {"serviceLocation":"mtl","serviceName":"monitor","servicePath":"monitor"}
+monitor/http/tcp --> [{"httpUri":"http://127.0.0.1:9987","transports":[{"addr":"127.0.0.1","hostScope":"ip-172-31-27-189.ec2.internal","name":"tcp","port":9987},{"name":"http","uri":"http://127.0.0.1:9987"}]},{"httpUri":"http://172.31.27.189:9987","transports":[{"addr":"172.31.27.189","hostScope":"*","name":"tcp","port":9987},{"name":"http","uri":"http://172.31.27.189:9987"}]}]
+monitor/zeromq/tcp --> [{"transports":[{"addr":"127.0.0.1","hostScope":"ip-172-31-27-189.ec2.internal","name":"tcp","port":24000},{"name":"zeromq","socketType":6,"uri":"tcp://127.0.0.1:24000"}],"zmqConnectUri":"tcp://127.0.0.1:24000"},{"transports":[{"addr":"172.31.27.189","hostScope":"*","name":"tcp","port":24000},{"name":"zeromq","socketType":6,"uri":"tcp://ip-172-31-27-189.ec2.internal:24000"}],"zmqConnectUri":"tcp://ip-172-31-27-189.ec2.internal:24000"}]
+
+
+rtbAgentConfiguration: 
+rtbBanker: 
+rtbDataLogger: 
+    data_logger          OK  2014-04-22 11:42:37  Alive
+rtbPostAuctionService: 
+rtbRequestRouter: 
+
+
+rtbAgentConfiguration: 
+rtbBanker: 
+rtbDataLogger: 
+    data_logger          OK  2014-04-22 11:42:47  Alive
+rtbPostAuctionService: 
+rtbRequestRouter: 

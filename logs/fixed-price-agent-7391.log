@@ -1,0 +1,122 @@
+2014-04-22 07:28:37.330 ZMQ ./soa/service/zmq_endpoint.cc:447 - bool Datacratic::ZmqNamedProxy::connect(const string&, Datacratic::ConnectionStyle) [1;31mconnecting to masterBanker/zeromq[0m
+2014-04-22 07:28:37.336 ZMQ ./soa/service/zmq_endpoint.cc:494 - bool Datacratic::ZmqNamedProxy::connect(const string&, Datacratic::ConnectionStyle) [1;31mconnected to tcp://ip-172-31-27-189.ec2.internal:22000[0m
+2014-04-22 07:28:37.338 ZMQ ./soa/service/zmq_endpoint.cc:447 - bool Datacratic::ZmqNamedProxy::connect(const string&, Datacratic::ConnectionStyle) [1;31mconnecting to agentConfigurationService/agents[0m
+wexists handler returned -101
+2. returning result 
+2014-04-22 07:28:37.354 ZMQ Trace ./soa/service/zmq_endpoint.cc:814 - void Datacratic::ZmqMultipleNamedClientBusProxy::watchServiceProvider(const string&, const string&) [1;31mconnecting to router / router[0m
+2014-04-22 07:28:37.355 ZMQ ./soa/service/zmq_endpoint.cc:447 - bool Datacratic::ZmqNamedProxy::connect(const string&, Datacratic::ConnectionStyle) [1;31mconnecting to router/agents[0m
+wexists handler returned -101
+2. returning result 
+2014-04-22 07:28:37.369 ZMQ Error ./soa/service/zmq_endpoint.h:956 - void Datacratic::ZmqNamedProxy::sendMessage(Args&& ...) [with Args = {const char (&)[7], std::basic_string<char>&, std::basic_string<char>&}] [1;31mdropping message for agents[0m
+2014-04-22 07:28:37.390 ZMQ Trace ./soa/service/zmq_endpoint.cc:814 - void Datacratic::ZmqMultipleNamedClientBusProxy::watchServiceProvider(const string&, const string&) [1;31mconnecting to PostAuctionLoop / PostAuctionLoop[0m
+2014-04-22 07:28:37.390 ZMQ ./soa/service/zmq_endpoint.cc:447 - bool Datacratic::ZmqNamedProxy::connect(const string&, Datacratic::ConnectionStyle) [1;31mconnecting to PostAuctionLoop/agents[0m
+wexists handler returned -101
+2. returning result 
+2014-04-22 07:28:37.401 ZMQ ./soa/service/zmq_endpoint.cc:447 - bool Datacratic::ZmqNamedProxy::connect(const string&, Datacratic::ConnectionStyle) [1;31mconnecting to agentConfigurationService/agents[0m
+2014-04-22 07:28:37.408 ZMQ ./soa/service/zmq_endpoint.cc:494 - bool Datacratic::ZmqNamedProxy::connect(const string&, Datacratic::ConnectionStyle) [1;31mconnected to tcp://ip-172-31-27-189.ec2.internal:15000[0m
+2014-04-22 07:28:37.430 ZMQ ./soa/service/zmq_endpoint.cc:447 - bool Datacratic::ZmqNamedProxy::connect(const string&, Datacratic::ConnectionStyle) [1;31mconnecting to router/agents[0m
+2014-04-22 07:28:37.435 ZMQ ./soa/service/zmq_endpoint.cc:447 - bool Datacratic::ZmqNamedProxy::connect(const string&, Datacratic::ConnectionStyle) [1;31mconnecting to router/agents[0m
+2014-04-22 07:28:37.445 ZMQ ./soa/service/zmq_endpoint.cc:494 - bool Datacratic::ZmqNamedProxy::connect(const string&, Datacratic::ConnectionStyle) [1;31mconnected to tcp://ip-172-31-27-189.ec2.internal:17000[0m
+BiddingAgent is connected to router router
+2014-04-22 07:28:37.514 ZMQ ./soa/service/zmq_endpoint.cc:447 - bool Datacratic::ZmqNamedProxy::connect(const string&, Datacratic::ConnectionStyle) [1;31mconnecting to PostAuctionLoop/agents[0m
+2014-04-22 07:28:37.521 ZMQ ./soa/service/zmq_endpoint.cc:494 - bool Datacratic::ZmqNamedProxy::connect(const string&, Datacratic::ConnectionStyle) [1;31mconnected to tcp://ip-172-31-27-189.ec2.internal:21000[0m
+BiddingAgent is connected to post auction service PostAuctionLoop
+2014-04-22 07:29:37.741 ZMQ Trace ./soa/service/zmq_endpoint.cc:814 - void Datacratic::ZmqMultipleNamedClientBusProxy::watchServiceProvider(const string&, const string&) [1;31mconnecting to router / router[0m
+2014-04-22 07:29:37.742 ZMQ ./soa/service/zmq_endpoint.cc:447 - bool Datacratic::ZmqNamedProxy::connect(const string&, Datacratic::ConnectionStyle) [1;31mconnecting to router/agents[0m
+wexists handler returned -101
+2. returning result 
+2014-04-22 07:29:37.797 ZMQ ./soa/service/zmq_endpoint.cc:447 - bool Datacratic::ZmqNamedProxy::connect(const string&, Datacratic::ConnectionStyle) [1;31mconnecting to router/agents[0m
+2014-04-22 07:29:37.800 ZMQ ./soa/service/zmq_endpoint.cc:447 - bool Datacratic::ZmqNamedProxy::connect(const string&, Datacratic::ConnectionStyle) [1;31mconnecting to router/agents[0m
+2014-04-22 07:29:37.801 ZMQ ./soa/service/zmq_endpoint.cc:494 - bool Datacratic::ZmqNamedProxy::connect(const string&, Datacratic::ConnectionStyle) [1;31mconnected to tcp://ip-172-31-27-189.ec2.internal:17000[0m
+BiddingAgent is connected to router router
+2014-04-22 07:30:07.816 ZMQ Trace ./soa/service/zmq_endpoint.cc:814 - void Datacratic::ZmqMultipleNamedClientBusProxy::watchServiceProvider(const string&, const string&) [1;31mconnecting to PostAuctionLoop / PostAuctionLoop[0m
+2014-04-22 07:30:07.816 ZMQ ./soa/service/zmq_endpoint.cc:447 - bool Datacratic::ZmqNamedProxy::connect(const string&, Datacratic::ConnectionStyle) [1;31mconnecting to PostAuctionLoop/agents[0m
+wexists handler returned -101
+2. returning result 
+2014-04-22 07:30:07.855 ZMQ ./soa/service/zmq_endpoint.cc:447 - bool Datacratic::ZmqNamedProxy::connect(const string&, Datacratic::ConnectionStyle) [1;31mconnecting to PostAuctionLoop/agents[0m
+2014-04-22 07:30:07.866 ZMQ ./soa/service/zmq_endpoint.cc:447 - bool Datacratic::ZmqNamedProxy::connect(const string&, Datacratic::ConnectionStyle) [1;31mconnecting to PostAuctionLoop/agents[0m
+2014-04-22 07:30:07.868 ZMQ ./soa/service/zmq_endpoint.cc:494 - bool Datacratic::ZmqNamedProxy::connect(const string&, Datacratic::ConnectionStyle) [1;31mconnected to tcp://ip-172-31-27-189.ec2.internal:21000[0m
+BiddingAgent is connected to post auction service PostAuctionLoop
+2014-04-22 07:31:07.841 ZMQ Trace ./soa/service/zmq_endpoint.cc:814 - void Datacratic::ZmqMultipleNamedClientBusProxy::watchServiceProvider(const string&, const string&) [1;31mconnecting to router / router[0m
+2014-04-22 07:31:07.841 ZMQ ./soa/service/zmq_endpoint.cc:447 - bool Datacratic::ZmqNamedProxy::connect(const string&, Datacratic::ConnectionStyle) [1;31mconnecting to router/agents[0m
+wexists handler returned -101
+2. returning result 
+2014-04-22 07:31:07.887 ZMQ ./soa/service/zmq_endpoint.cc:447 - bool Datacratic::ZmqNamedProxy::connect(const string&, Datacratic::ConnectionStyle) [1;31mconnecting to router/agents[0m
+2014-04-22 07:31:07.897 ZMQ ./soa/service/zmq_endpoint.cc:447 - bool Datacratic::ZmqNamedProxy::connect(const string&, Datacratic::ConnectionStyle) [1;31mconnecting to router/agents[0m
+2014-04-22 07:31:07.899 ZMQ ./soa/service/zmq_endpoint.cc:494 - bool Datacratic::ZmqNamedProxy::connect(const string&, Datacratic::ConnectionStyle) [1;31mconnected to tcp://ip-172-31-27-189.ec2.internal:17000[0m
+BiddingAgent is connected to router router
+2014-04-22 07:31:37.894 ZMQ Trace ./soa/service/zmq_endpoint.cc:814 - void Datacratic::ZmqMultipleNamedClientBusProxy::watchServiceProvider(const string&, const string&) [1;31mconnecting to PostAuctionLoop / PostAuctionLoop[0m
+2014-04-22 07:31:37.894 ZMQ ./soa/service/zmq_endpoint.cc:447 - bool Datacratic::ZmqNamedProxy::connect(const string&, Datacratic::ConnectionStyle) [1;31mconnecting to PostAuctionLoop/agents[0m
+wexists handler returned -101
+2. returning result 
+2014-04-22 07:31:37.933 ZMQ ./soa/service/zmq_endpoint.cc:447 - bool Datacratic::ZmqNamedProxy::connect(const string&, Datacratic::ConnectionStyle) [1;31mconnecting to PostAuctionLoop/agents[0m
+2014-04-22 07:31:37.937 ZMQ ./soa/service/zmq_endpoint.cc:494 - bool Datacratic::ZmqNamedProxy::connect(const string&, Datacratic::ConnectionStyle) [1;31mconnected to tcp://ip-172-31-27-189.ec2.internal:21000[0m
+BiddingAgent is connected to post auction service PostAuctionLoop
+2014-04-22 07:32:37.919 ZMQ Trace ./soa/service/zmq_endpoint.cc:814 - void Datacratic::ZmqMultipleNamedClientBusProxy::watchServiceProvider(const string&, const string&) [1;31mconnecting to router / router[0m
+2014-04-22 07:32:37.919 ZMQ ./soa/service/zmq_endpoint.cc:447 - bool Datacratic::ZmqNamedProxy::connect(const string&, Datacratic::ConnectionStyle) [1;31mconnecting to router/agents[0m
+wexists handler returned -101
+2. returning result 
+2014-04-22 07:32:37.969 ZMQ ./soa/service/zmq_endpoint.cc:447 - bool Datacratic::ZmqNamedProxy::connect(const string&, Datacratic::ConnectionStyle) [1;31mconnecting to router/agents[0m
+2014-04-22 07:32:37.972 ZMQ ./soa/service/zmq_endpoint.cc:447 - bool Datacratic::ZmqNamedProxy::connect(const string&, Datacratic::ConnectionStyle) [1;31mconnecting to router/agents[0m
+2014-04-22 07:32:37.975 ZMQ ./soa/service/zmq_endpoint.cc:494 - bool Datacratic::ZmqNamedProxy::connect(const string&, Datacratic::ConnectionStyle) [1;31mconnected to tcp://ip-172-31-27-189.ec2.internal:17000[0m
+BiddingAgent is connected to router router
+2014-04-22 07:33:07.993 ZMQ Trace ./soa/service/zmq_endpoint.cc:814 - void Datacratic::ZmqMultipleNamedClientBusProxy::watchServiceProvider(const string&, const string&) [1;31mconnecting to PostAuctionLoop / PostAuctionLoop[0m
+2014-04-22 07:33:07.993 ZMQ ./soa/service/zmq_endpoint.cc:447 - bool Datacratic::ZmqNamedProxy::connect(const string&, Datacratic::ConnectionStyle) [1;31mconnecting to PostAuctionLoop/agents[0m
+wexists handler returned -101
+2. returning result 
+2014-04-22 07:33:08.046 ZMQ ./soa/service/zmq_endpoint.cc:447 - bool Datacratic::ZmqNamedProxy::connect(const string&, Datacratic::ConnectionStyle) [1;31mconnecting to PostAuctionLoop/agents[0m
+2014-04-22 07:33:08.049 ZMQ ./soa/service/zmq_endpoint.cc:494 - bool Datacratic::ZmqNamedProxy::connect(const string&, Datacratic::ConnectionStyle) [1;31mconnected to tcp://ip-172-31-27-189.ec2.internal:21000[0m
+BiddingAgent is connected to post auction service PostAuctionLoop
+2014-04-22 07:34:08.008 ZMQ Trace ./soa/service/zmq_endpoint.cc:814 - void Datacratic::ZmqMultipleNamedClientBusProxy::watchServiceProvider(const string&, const string&) [1;31mconnecting to router / router[0m
+2014-04-22 07:34:08.008 ZMQ ./soa/service/zmq_endpoint.cc:447 - bool Datacratic::ZmqNamedProxy::connect(const string&, Datacratic::ConnectionStyle) [1;31mconnecting to router/agents[0m
+wexists handler returned -101
+2. returning result 
+2014-04-22 07:34:08.065 ZMQ ./soa/service/zmq_endpoint.cc:447 - bool Datacratic::ZmqNamedProxy::connect(const string&, Datacratic::ConnectionStyle) [1;31mconnecting to router/agents[0m
+2014-04-22 07:34:08.069 ZMQ ./soa/service/zmq_endpoint.cc:494 - bool Datacratic::ZmqNamedProxy::connect(const string&, Datacratic::ConnectionStyle) [1;31mconnected to tcp://ip-172-31-27-189.ec2.internal:17000[0m
+BiddingAgent is connected to router router
+2014-04-22 07:34:38.088 ZMQ Trace ./soa/service/zmq_endpoint.cc:814 - void Datacratic::ZmqMultipleNamedClientBusProxy::watchServiceProvider(const string&, const string&) [1;31mconnecting to PostAuctionLoop / PostAuctionLoop[0m
+2014-04-22 07:34:38.088 ZMQ ./soa/service/zmq_endpoint.cc:447 - bool Datacratic::ZmqNamedProxy::connect(const string&, Datacratic::ConnectionStyle) [1;31mconnecting to PostAuctionLoop/agents[0m
+wexists handler returned -101
+2. returning result 
+2014-04-22 07:34:38.136 ZMQ ./soa/service/zmq_endpoint.cc:447 - bool Datacratic::ZmqNamedProxy::connect(const string&, Datacratic::ConnectionStyle) [1;31mconnecting to PostAuctionLoop/agents[0m
+2014-04-22 07:34:38.139 ZMQ ./soa/service/zmq_endpoint.cc:494 - bool Datacratic::ZmqNamedProxy::connect(const string&, Datacratic::ConnectionStyle) [1;31mconnected to tcp://ip-172-31-27-189.ec2.internal:21000[0m
+BiddingAgent is connected to post auction service PostAuctionLoop
+2014-04-22 07:35:38.106 ZMQ Trace ./soa/service/zmq_endpoint.cc:814 - void Datacratic::ZmqMultipleNamedClientBusProxy::watchServiceProvider(const string&, const string&) [1;31mconnecting to router / router[0m
+2014-04-22 07:35:38.106 ZMQ ./soa/service/zmq_endpoint.cc:447 - bool Datacratic::ZmqNamedProxy::connect(const string&, Datacratic::ConnectionStyle) [1;31mconnecting to router/agents[0m
+wexists handler returned -101
+2. returning result 
+2014-04-22 07:35:38.155 ZMQ ./soa/service/zmq_endpoint.cc:447 - bool Datacratic::ZmqNamedProxy::connect(const string&, Datacratic::ConnectionStyle) [1;31mconnecting to router/agents[0m
+2014-04-22 07:35:38.166 ZMQ ./soa/service/zmq_endpoint.cc:447 - bool Datacratic::ZmqNamedProxy::connect(const string&, Datacratic::ConnectionStyle) [1;31mconnecting to router/agents[0m
+2014-04-22 07:35:38.167 ZMQ ./soa/service/zmq_endpoint.cc:494 - bool Datacratic::ZmqNamedProxy::connect(const string&, Datacratic::ConnectionStyle) [1;31mconnected to tcp://ip-172-31-27-189.ec2.internal:17000[0m
+BiddingAgent is connected to router router
+2014-04-22 07:36:08.183 ZMQ Trace ./soa/service/zmq_endpoint.cc:814 - void Datacratic::ZmqMultipleNamedClientBusProxy::watchServiceProvider(const string&, const string&) [1;31mconnecting to PostAuctionLoop / PostAuctionLoop[0m
+2014-04-22 07:36:08.183 ZMQ ./soa/service/zmq_endpoint.cc:447 - bool Datacratic::ZmqNamedProxy::connect(const string&, Datacratic::ConnectionStyle) [1;31mconnecting to PostAuctionLoop/agents[0m
+wexists handler returned -101
+2. returning result 
+2014-04-22 07:36:08.222 ZMQ ./soa/service/zmq_endpoint.cc:447 - bool Datacratic::ZmqNamedProxy::connect(const string&, Datacratic::ConnectionStyle) [1;31mconnecting to PostAuctionLoop/agents[0m
+2014-04-22 07:36:08.224 ZMQ ./soa/service/zmq_endpoint.cc:447 - bool Datacratic::ZmqNamedProxy::connect(const string&, Datacratic::ConnectionStyle) [1;31mconnecting to PostAuctionLoop/agents[0m
+2014-04-22 07:36:08.226 ZMQ ./soa/service/zmq_endpoint.cc:494 - bool Datacratic::ZmqNamedProxy::connect(const string&, Datacratic::ConnectionStyle) [1;31mconnected to tcp://ip-172-31-27-189.ec2.internal:21000[0m
+BiddingAgent is connected to post auction service PostAuctionLoop
+2014-04-22 07:37:08.213 ZMQ Trace ./soa/service/zmq_endpoint.cc:814 - void Datacratic::ZmqMultipleNamedClientBusProxy::watchServiceProvider(const string&, const string&) [1;31mconnecting to router / router[0m
+2014-04-22 07:37:08.213 ZMQ ./soa/service/zmq_endpoint.cc:447 - bool Datacratic::ZmqNamedProxy::connect(const string&, Datacratic::ConnectionStyle) [1;31mconnecting to router/agents[0m
+wexists handler returned -101
+2. returning result 
+2014-04-22 07:37:08.266 ZMQ ./soa/service/zmq_endpoint.cc:447 - bool Datacratic::ZmqNamedProxy::connect(const string&, Datacratic::ConnectionStyle) [1;31mconnecting to router/agents[0m
+2014-04-22 07:37:08.269 ZMQ ./soa/service/zmq_endpoint.cc:447 - bool Datacratic::ZmqNamedProxy::connect(const string&, Datacratic::ConnectionStyle) [1;31mconnecting to router/agents[0m
+2014-04-22 07:37:08.270 ZMQ ./soa/service/zmq_endpoint.cc:494 - bool Datacratic::ZmqNamedProxy::connect(const string&, Datacratic::ConnectionStyle) [1;31mconnected to tcp://ip-172-31-27-189.ec2.internal:17000[0m
+BiddingAgent is connected to router router
+2014-04-22 07:37:38.280 ZMQ Trace ./soa/service/zmq_endpoint.cc:814 - void Datacratic::ZmqMultipleNamedClientBusProxy::watchServiceProvider(const string&, const string&) [1;31mconnecting to PostAuctionLoop / PostAuctionLoop[0m
+2014-04-22 07:37:38.281 ZMQ ./soa/service/zmq_endpoint.cc:447 - bool Datacratic::ZmqNamedProxy::connect(const string&, Datacratic::ConnectionStyle) [1;31mconnecting to PostAuctionLoop/agents[0m
+wexists handler returned -101
+2. returning result 
+2014-04-22 07:37:38.329 ZMQ ./soa/service/zmq_endpoint.cc:447 - bool Datacratic::ZmqNamedProxy::connect(const string&, Datacratic::ConnectionStyle) [1;31mconnecting to PostAuctionLoop/agents[0m
+2014-04-22 07:37:38.332 ZMQ ./soa/service/zmq_endpoint.cc:494 - bool Datacratic::ZmqNamedProxy::connect(const string&, Datacratic::ConnectionStyle) [1;31mconnected to tcp://ip-172-31-27-189.ec2.internal:21000[0m
+BiddingAgent is connected to post auction service PostAuctionLoop
+2014-04-22 07:38:38.303 ZMQ Trace ./soa/service/zmq_endpoint.cc:814 - void Datacratic::ZmqMultipleNamedClientBusProxy::watchServiceProvider(const string&, const string&) [1;31mconnecting to router / router[0m
+2014-04-22 07:38:38.303 ZMQ ./soa/service/zmq_endpoint.cc:447 - bool Datacratic::ZmqNamedProxy::connect(const string&, Datacratic::ConnectionStyle) [1;31mconnecting to router/agents[0m
+wexists handler returned -101
+2. returning result 
+2014-04-22 07:38:38.358 ZMQ ./soa/service/zmq_endpoint.cc:447 - bool Datacratic::ZmqNamedProxy::connect(const string&, Datacratic::ConnectionStyle) [1;31mconnecting to router/agents[0m
+2014-04-22 07:38:38.360 ZMQ ./soa/service/zmq_endpoint.cc:447 - bool Datacratic::ZmqNamedProxy::connect(const string&, Datacratic::ConnectionStyle) [1;31mconnecting to router/agents[0m
+2014-04-22 07:38:38.362 ZMQ ./soa/service/zmq_endpoint.cc:494 - bool Datacratic::ZmqNamedProxy::connect(const string&, Datacratic::ConnectionStyle) [1;31mconnected to tcp://ip-172-31-27-189.ec2.internal:17000[0m
+BiddingAgent is connected to router router

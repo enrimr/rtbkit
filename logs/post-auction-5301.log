@@ -1,0 +1,23 @@
+connecting to Carbon at 127.0.0.1:2003 (localhost)
+zookeeper error on zoo_create, path /rtb-test/serviceClass/rtbPostAuctionService/PostAuctionLoop: node exists
+
+--------------------------[Exception thrown]---------------------------
+time:   2014-04-22-071237
+type:   ML::Exception
+pid:    5301; tid: 5301
+what:   Zookeeper error on zoo_create, path /rtb-test/serviceClass/rtbPostAuctionService/PostAuctionLoop: node exists
+stack:
+00: 0x0x7fd104b51db7 at __cxa_throw + 0x27 in /home/rtbkit/rtbkit/build/x86_64/bin/../bin/libexception_hook.so + 0xdb7/home/rtbkit/rtbkit/build/x86_64/bin/../bin/libexception_hook.so(__cxa_throw+0x27) [0x7fd104b51db7]
+01: 0x0x7fd1041f07c3 at Datacratic::ZookeeperConnection::checkRes(int, int&, char const*, char const*) + 0xe3 in /home/rtbkit/rtbkit/build/x86_64/bin/../bin/libservices.so + 0x1097c3/home/rtbkit/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZN10Datacratic19ZookeeperConnection8checkResEiRiPKcS3_+0xe3) [0x7fd1041f07c3]
+02: 0x0x7fd1041f03c1 at Datacratic::ZookeeperConnection::createNode(std::string const&, std::string const&, bool, bool, bool, bool) + 0x441 in /home/rtbkit/rtbkit/build/x86_64/bin/../bin/libservices.so + 0x1093c1/home/rtbkit/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZN10Datacratic19ZookeeperConnection10createNodeERKSsS2_bbbb+0x441) [0x7fd1041f03c1]
+03: 0x0x7fd1041a9695 at Datacratic::ZookeeperConfigurationService::setUnique(std::string const&, Json::Value const&) + 0x285 in /home/rtbkit/rtbkit/build/x86_64/bin/../bin/libservices.so + 0xc2695/home/rtbkit/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZN10Datacratic29ZookeeperConfigurationService9setUniqueERKSsRKN4Json5ValueE+0x285) [0x7fd1041a9695]
+04: 0x0x7fd104195004 at Datacratic::ServiceBase::registerServiceProvider(std::string const&, std::vector<std::string, std::allocator<std::string> > const&) + 0x1c4 in /home/rtbkit/rtbkit/build/x86_64/bin/../bin/libservices.so + 0xae004/home/rtbkit/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZN10Datacratic11ServiceBase23registerServiceProviderERKSsRKSt6vectorISsSaISsEE+0x1c4) [0x7fd104195004]
+05: 0x0x7fd10448ad37 at RTBKIT::PostAuctionLoop::initConnections() + 0xc7 in /home/rtbkit/rtbkit/build/x86_64/bin/../bin/libpost_auction.so + 0x45d37/home/rtbkit/rtbkit/build/x86_64/bin/../bin/libpost_auction.so(_ZN6RTBKIT15PostAuctionLoop15initConnectionsEv+0xc7) [0x7fd10448ad37]
+06: 0x0x7fd10448c051 at RTBKIT::PostAuctionLoop::init() + 0x11 in /home/rtbkit/rtbkit/build/x86_64/bin/../bin/libpost_auction.so + 0x47051/home/rtbkit/rtbkit/build/x86_64/bin/../bin/libpost_auction.so(_ZN6RTBKIT15PostAuctionLoop4initEv+0x11) [0x7fd10448c051]
+07: 0x0x41f4a9 at RTBKIT::PostAuctionRunner::init() + 0x1b9 in build/x86_64/bin/post_auction_runner + 0x1f4a9build/x86_64/bin/post_auction_runner(_ZN6RTBKIT17PostAuctionRunner4initEv+0x1b9) [0x41f4a9]
+08: 0x0x41e01e at main + 0x6e in build/x86_64/bin/post_auction_runner + 0x1e01ebuild/x86_64/bin/post_auction_runner(main+0x6e) [0x41e01e]
+09: 0x0x7fd10303576d at __libc_start_main + 0xed in /lib/x86_64-linux-gnu/libc.so.6 + 0x2176d/lib/x86_64-linux-gnu/libc.so.6(__libc_start_main+0xed) [0x7fd10303576d]
+10: 0x0x41e5fd in build/x86_64/bin/post_auction_runner + 0x1e5fdbuild/x86_64/bin/post_auction_runner() [0x41e5fd]
+
+terminate called after throwing an instance of 'ML::Exception'
+  what():  Zookeeper error on zoo_create, path /rtb-test/serviceClass/rtbPostAuctionService/PostAuctionLoop: node exists

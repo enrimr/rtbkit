@@ -1,0 +1,24 @@
+zookeeper error on zoo_create, path /rtb-test/serviceClass/adServer/adServer: node exists
+
+--------------------------[Exception thrown]---------------------------
+time:   2014-04-22-074157
+type:   ML::Exception
+pid:    8478; tid: 8478
+what:   Zookeeper error on zoo_create, path /rtb-test/serviceClass/adServer/adServer: node exists
+stack:
+00: 0x0x7f31f2f23db7 at __cxa_throw + 0x27 in /home/rtbkit/rtbkit/build/x86_64/bin/../bin/libexception_hook.so + 0xdb7/home/rtbkit/rtbkit/build/x86_64/bin/../bin/libexception_hook.so(__cxa_throw+0x27) [0x7f31f2f23db7]
+01: 0x0x7f31f23aa7c3 at Datacratic::ZookeeperConnection::checkRes(int, int&, char const*, char const*) + 0xe3 in /home/rtbkit/rtbkit/build/x86_64/bin/../bin/libservices.so + 0x1097c3/home/rtbkit/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZN10Datacratic19ZookeeperConnection8checkResEiRiPKcS3_+0xe3) [0x7f31f23aa7c3]
+02: 0x0x7f31f23aa3c1 at Datacratic::ZookeeperConnection::createNode(std::string const&, std::string const&, bool, bool, bool, bool) + 0x441 in /home/rtbkit/rtbkit/build/x86_64/bin/../bin/libservices.so + 0x1093c1/home/rtbkit/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZN10Datacratic19ZookeeperConnection10createNodeERKSsS2_bbbb+0x441) [0x7f31f23aa3c1]
+03: 0x0x7f31f2363695 at Datacratic::ZookeeperConfigurationService::setUnique(std::string const&, Json::Value const&) + 0x285 in /home/rtbkit/rtbkit/build/x86_64/bin/../bin/libservices.so + 0xc2695/home/rtbkit/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZN10Datacratic29ZookeeperConfigurationService9setUniqueERKSsRKN4Json5ValueE+0x285) [0x7f31f2363695]
+04: 0x0x7f31f234f004 at Datacratic::ServiceBase::registerServiceProvider(std::string const&, std::vector<std::string, std::allocator<std::string> > const&) + 0x1c4 in /home/rtbkit/rtbkit/build/x86_64/bin/../bin/libservices.so + 0xae004/home/rtbkit/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZN10Datacratic11ServiceBase23registerServiceProviderERKSsRKSt6vectorISsSaISsEE+0x1c4) [0x7f31f234f004]
+05: 0x0x7f31f28911d5 at RTBKIT::AdServerConnector::init(std::shared_ptr<Datacratic::ConfigurationService>) + 0xc5 in /home/rtbkit/rtbkit/build/x86_64/bin/../bin/libadserver_connector.so + 0x201d5/home/rtbkit/rtbkit/build/x86_64/bin/../bin/libadserver_connector.so(_ZN6RTBKIT17AdServerConnector4initESt10shared_ptrIN10Datacratic20ConfigurationServiceEE+0xc5) [0x7f31f28911d5]
+06: 0x0x7f31f289d98d at RTBKIT::HttpAdServerConnector::init(std::shared_ptr<Datacratic::ConfigurationService> const&) + 0x5d in /home/rtbkit/rtbkit/build/x86_64/bin/../bin/libadserver_connector.so + 0x2c98d/home/rtbkit/rtbkit/build/x86_64/bin/../bin/libadserver_connector.so(_ZN6RTBKIT21HttpAdServerConnector4initERKSt10shared_ptrIN10Datacratic20ConfigurationServiceEE+0x5d) [0x7f31f289d98d]
+07: 0x0x7f31e8a2e4c8 at RTBKIT::MockAdServerConnector::init(int, int) + 0x68 in /home/rtbkit/rtbkit/build/x86_64/bin/../bin/../bin/libmock_adserver.so + 0x214c8/home/rtbkit/rtbkit/build/x86_64/bin/../bin/../bin/libmock_adserver.so(_ZN6RTBKIT21MockAdServerConnector4initEii+0x68) [0x7f31e8a2e4c8]
+08: 0x0x7f31e8a2fa83 in /home/rtbkit/rtbkit/build/x86_64/bin/../bin/../bin/libmock_adserver.so + 0x22a83/home/rtbkit/rtbkit/build/x86_64/bin/../bin/../bin/libmock_adserver.so(+0x22a83) [0x7f31e8a2fa83]
+09: 0x0x7f31f2890635 at RTBKIT::AdServerConnector::create(std::string const&, std::shared_ptr<Datacratic::ServiceProxies> const&, Json::Value const&) + 0xc5 in /home/rtbkit/rtbkit/build/x86_64/bin/../bin/libadserver_connector.so + 0x1f635/home/rtbkit/rtbkit/build/x86_64/bin/../bin/libadserver_connector.so(_ZN6RTBKIT17AdServerConnector6createERKSsRKSt10shared_ptrIN10Datacratic14ServiceProxiesEERKN4Json5ValueE+0xc5) [0x7f31f2890635]
+10: 0x0x409c1e at main + 0x51e in build/x86_64/bin/adserver_runner + 0x9c1ebuild/x86_64/bin/adserver_runner(main+0x51e) [0x409c1e]
+11: 0x0x7f31f16f076d at __libc_start_main + 0xed in /lib/x86_64-linux-gnu/libc.so.6 + 0x2176d/lib/x86_64-linux-gnu/libc.so.6(__libc_start_main+0xed) [0x7f31f16f076d]
+12: 0x0x40a02d in build/x86_64/bin/adserver_runner + 0xa02dbuild/x86_64/bin/adserver_runner() [0x40a02d]
+
+terminate called after throwing an instance of 'ML::Exception'
+  what():  Zookeeper error on zoo_create, path /rtb-test/serviceClass/adServer/adServer: node exists

@@ -1,0 +1,21 @@
+connecting to Carbon at 127.0.0.1:2003 (localhost)
+zookeeper error on zoo_create, path /rtb-test/serviceClass/monitor/monitor: node exists
+
+--------------------------[Exception thrown]---------------------------
+time:   2014-04-22-071237
+type:   ML::Exception
+pid:    5285; tid: 5285
+what:   Zookeeper error on zoo_create, path /rtb-test/serviceClass/monitor/monitor: node exists
+stack:
+00: 0x0x7fa9ff4addb7 at __cxa_throw + 0x27 in /home/rtbkit/rtbkit/build/x86_64/bin/../bin/libexception_hook.so + 0xdb7/home/rtbkit/rtbkit/build/x86_64/bin/../bin/libexception_hook.so(__cxa_throw+0x27) [0x7fa9ff4addb7]
+01: 0x0x7fa9fdd8b7c3 at Datacratic::ZookeeperConnection::checkRes(int, int&, char const*, char const*) + 0xe3 in /home/rtbkit/rtbkit/build/x86_64/bin/../bin/libservices.so + 0x1097c3/home/rtbkit/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZN10Datacratic19ZookeeperConnection8checkResEiRiPKcS3_+0xe3) [0x7fa9fdd8b7c3]
+02: 0x0x7fa9fdd8b3c1 at Datacratic::ZookeeperConnection::createNode(std::string const&, std::string const&, bool, bool, bool, bool) + 0x441 in /home/rtbkit/rtbkit/build/x86_64/bin/../bin/libservices.so + 0x1093c1/home/rtbkit/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZN10Datacratic19ZookeeperConnection10createNodeERKSsS2_bbbb+0x441) [0x7fa9fdd8b3c1]
+03: 0x0x7fa9fdd44695 at Datacratic::ZookeeperConfigurationService::setUnique(std::string const&, Json::Value const&) + 0x285 in /home/rtbkit/rtbkit/build/x86_64/bin/../bin/libservices.so + 0xc2695/home/rtbkit/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZN10Datacratic29ZookeeperConfigurationService9setUniqueERKSsRKN4Json5ValueE+0x285) [0x7fa9fdd44695]
+04: 0x0x7fa9fdd30004 at Datacratic::ServiceBase::registerServiceProvider(std::string const&, std::vector<std::string, std::allocator<std::string> > const&) + 0x1c4 in /home/rtbkit/rtbkit/build/x86_64/bin/../bin/libservices.so + 0xae004/home/rtbkit/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZN10Datacratic11ServiceBase23registerServiceProviderERKSsRKSt6vectorISsSaISsEE+0x1c4) [0x7fa9fdd30004]
+05: 0x0x7fa9fee2c9ff at RTBKIT::MonitorEndpoint::init(std::vector<std::string, std::allocator<std::string> > const&) + 0x14f in /home/rtbkit/rtbkit/build/x86_64/bin/../bin/libmonitor_service.so + 0x89ff/home/rtbkit/rtbkit/build/x86_64/bin/../bin/libmonitor_service.so(_ZN6RTBKIT15MonitorEndpoint4initERKSt6vectorISsSaISsEE+0x14f) [0x7fa9fee2c9ff]
+06: 0x0x40703f at main + 0x49f in build/x86_64/bin/monitor_service_runner + 0x703fbuild/x86_64/bin/monitor_service_runner(main+0x49f) [0x40703f]
+07: 0x0x7fa9fe00176d at __libc_start_main + 0xed in /lib/x86_64-linux-gnu/libc.so.6 + 0x2176d/lib/x86_64-linux-gnu/libc.so.6(__libc_start_main+0xed) [0x7fa9fe00176d]
+08: 0x0x4074f9 in build/x86_64/bin/monitor_service_runner + 0x74f9build/x86_64/bin/monitor_service_runner() [0x4074f9]
+
+terminate called after throwing an instance of 'ML::Exception'
+  what():  Zookeeper error on zoo_create, path /rtb-test/serviceClass/monitor/monitor: node exists

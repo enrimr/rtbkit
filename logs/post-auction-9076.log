@@ -1,0 +1,61 @@
+post auction logger on PostAuctionLoop/logger
+2014-04-22 07:47:06.836 ZMQ ./soa/service/zmq_endpoint.cc:447 - bool Datacratic::ZmqNamedProxy::connect(const string&, Datacratic::ConnectionStyle) [1;31mconnecting to agentConfigurationService/listen[0m
+2014-04-22 07:47:06.839 ZMQ ./soa/service/zmq_endpoint.cc:494 - bool Datacratic::ZmqNamedProxy::connect(const string&, Datacratic::ConnectionStyle) [1;31mconnected to tcp://ip-172-31-27-189.ec2.internal:19000[0m
+2014-04-22 07:47:06.840 ZMQ ./soa/service/zmq_endpoint.cc:447 - bool Datacratic::ZmqNamedProxy::connect(const string&, Datacratic::ConnectionStyle) [1;31mconnecting to monitor/zeromq[0m
+2014-04-22 07:47:06.841 ZMQ ./soa/service/zmq_endpoint.cc:494 - bool Datacratic::ZmqNamedProxy::connect(const string&, Datacratic::ConnectionStyle) [1;31mconnected to tcp://ip-172-31-27-189.ec2.internal:24000[0m
+2014-04-22 07:47:06.842 ZMQ ./soa/service/zmq_endpoint.cc:447 - bool Datacratic::ZmqNamedProxy::connect(const string&, Datacratic::ConnectionStyle) [1;31mconnecting to masterBanker/zeromq[0m
+2014-04-22 07:47:06.844 ZMQ ./soa/service/zmq_endpoint.cc:494 - bool Datacratic::ZmqNamedProxy::connect(const string&, Datacratic::ConnectionStyle) [1;31mconnected to tcp://ip-172-31-27-189.ec2.internal:22000[0m
+got configuration message fixed-price-agent-ex_8878
+
+--------------------------[Exception thrown]---------------------------
+time:   2014-04-22-074706
+type:   ML::Exception
+pid:    9076; tid: 9083
+what:   creatives require an ID to be specified
+stack:
+00: 0x0x7f9a401d2db7 at __cxa_throw + 0x27 in /home/rtbkit/rtbkit/build/x86_64/bin/../bin/libexception_hook.so + 0xdb7/home/rtbkit/rtbkit/build/x86_64/bin/../bin/libexception_hook.so(__cxa_throw+0x27) [0x7f9a401d2db7]
+01: 0x0x7f9a3ceec785 at RTBKIT::Creative::fromJson(Json::Value const&) + 0x215 in /home/rtbkit/rtbkit/build/x86_64/bin/../bin/../bin/libagent_configuration.so + 0x51785/home/rtbkit/rtbkit/build/x86_64/bin/../bin/../bin/libagent_configuration.so(_ZN6RTBKIT8Creative8fromJsonERKN4Json5ValueE+0x215) [0x7f9a3ceec785]
+02: 0x0x7f9a3ceecf82 at RTBKIT::AgentConfig::createFromJson(Json::Value const&) + 0x792 in /home/rtbkit/rtbkit/build/x86_64/bin/../bin/../bin/libagent_configuration.so + 0x51f82/home/rtbkit/rtbkit/build/x86_64/bin/../bin/../bin/libagent_configuration.so(_ZN6RTBKIT11AgentConfig14createFromJsonERKN4Json5ValueE+0x792) [0x7f9a3ceecf82]
+03: 0x0x7f9a3cf20b68 at RTBKIT::AgentConfigurationListener::onMessage(std::vector<std::string, std::allocator<std::string> > const&) + 0x808 in /home/rtbkit/rtbkit/build/x86_64/bin/../bin/../bin/libagent_configuration.so + 0x85b68/home/rtbkit/rtbkit/build/x86_64/bin/../bin/../bin/libagent_configuration.so(_ZN6RTBKIT26AgentConfigurationListener9onMessageERKSt6vectorISsSaISsEE+0x808) [0x7f9a3cf20b68]
+04: 0x0x7f9a3fb291b1 at Datacratic::ZmqNamedClientBusProxy::handleMessage(std::vector<std::string, std::allocator<std::string> > const&) + 0x71 in /home/rtbkit/rtbkit/build/x86_64/bin/../bin/libpost_auction.so + 0x631b1/home/rtbkit/rtbkit/build/x86_64/bin/../bin/libpost_auction.so(_ZN10Datacratic22ZmqNamedClientBusProxy13handleMessageERKSt6vectorISsSaISsEE+0x71) [0x7f9a3fb291b1]
+05: 0x0x7f9a3f82e45b at Datacratic::ZmqEventSource::handleMessage(std::vector<std::string, std::allocator<std::string> > const&) + 0x6b in /home/rtbkit/rtbkit/build/x86_64/bin/../bin/libservices.so + 0xc645b/home/rtbkit/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZN10Datacratic14ZmqEventSource13handleMessageERKSt6vectorISsSaISsEE+0x6b) [0x7f9a3f82e45b]
+06: 0x0x7f9a3f82eeb7 at Datacratic::ZmqEventSource::processOne() + 0x147 in /home/rtbkit/rtbkit/build/x86_64/bin/../bin/libservices.so + 0xc6eb7/home/rtbkit/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZN10Datacratic14ZmqEventSource10processOneEv+0x147) [0x7f9a3f82eeb7]
+07: 0x0x7f9a3f821cca at Datacratic::MessageLoop::processOne() + 0xba in /home/rtbkit/rtbkit/build/x86_64/bin/../bin/libservices.so + 0xb9cca/home/rtbkit/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZN10Datacratic11MessageLoop10processOneEv+0xba) [0x7f9a3f821cca]
+08: 0x0x7f9a3f81d0d8 at Datacratic::MessageLoop::handleEpollEvent(epoll_event&) + 0x18 in /home/rtbkit/rtbkit/build/x86_64/bin/../bin/libservices.so + 0xb50d8/home/rtbkit/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZN10Datacratic11MessageLoop16handleEpollEventER11epoll_event+0x18) [0x7f9a3f81d0d8]
+09: 0x0x7f9a3f80c81b at Datacratic::Epoller::handleEvents(int, int, std::function<bool (epoll_event&)> const&, std::function<void ()> const&, std::function<void ()> const&) + 0x29b in /home/rtbkit/rtbkit/build/x86_64/bin/../bin/libservices.so + 0xa481b/home/rtbkit/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZN10Datacratic7Epoller12handleEventsEiiRKSt8functionIFbR11epoll_eventEERKS1_IFvvEESB_+0x29b) [0x7f9a3f80c81b]
+10: 0x0x7f9a3f821de1 at Datacratic::MessageLoop::processOne() + 0x1d1 in /home/rtbkit/rtbkit/build/x86_64/bin/../bin/libservices.so + 0xb9de1/home/rtbkit/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZN10Datacratic11MessageLoop10processOneEv+0x1d1) [0x7f9a3f821de1]
+11: 0x0x7f9a3f821cca at Datacratic::MessageLoop::processOne() + 0xba in /home/rtbkit/rtbkit/build/x86_64/bin/../bin/libservices.so + 0xb9cca/home/rtbkit/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZN10Datacratic11MessageLoop10processOneEv+0xba) [0x7f9a3f821cca]
+12: 0x0x7f9a3f81d579 at Datacratic::MessageLoop::runWorkerThread() + 0xc9 in /home/rtbkit/rtbkit/build/x86_64/bin/../bin/libservices.so + 0xb5579/home/rtbkit/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZN10Datacratic11MessageLoop15runWorkerThreadEv+0xc9) [0x7f9a3f81d579]
+13: 0x0x7f9a3f81de58 in /home/rtbkit/rtbkit/build/x86_64/bin/../bin/libservices.so + 0xb5e58/home/rtbkit/rtbkit/build/x86_64/bin/../bin/libservices.so(+0xb5e58) [0x7f9a3f81de58]
+14: 0x0x7f9a3e482b9d in /home/rtbkit/local/lib/libboost_thread.so.1.52.0 + 0x10b9d/home/rtbkit/local/lib/libboost_thread.so.1.52.0(+0x10b9d) [0x7f9a3e482b9d]
+15: 0x0x7f9a403dce9a in /lib/x86_64-linux-gnu/libpthread.so.0 + 0x7e9a/lib/x86_64-linux-gnu/libpthread.so.0(+0x7e9a) [0x7f9a403dce9a]
+16: 0x0x7f9a3e7893fd at clone + 0x6d in /lib/x86_64-linux-gnu/libc.so.6 + 0xf43fd/lib/x86_64-linux-gnu/libc.so.6(clone+0x6d) [0x7f9a3e7893fd]
+
+
+--------------------------[Exception thrown]---------------------------
+time:   2014-04-22-074706
+type:   ML::Exception
+pid:    9076; tid: 9083
+what:   parsing creative 3: creatives require an ID to be specified
+stack:
+00: 0x0x7f9a401d2db7 at __cxa_throw + 0x27 in /home/rtbkit/rtbkit/build/x86_64/bin/../bin/libexception_hook.so + 0xdb7/home/rtbkit/rtbkit/build/x86_64/bin/../bin/libexception_hook.so(__cxa_throw+0x27) [0x7f9a401d2db7]
+01: 0x0x7f9a3ceed6b3 at RTBKIT::AgentConfig::createFromJson(Json::Value const&) + 0xec3 in /home/rtbkit/rtbkit/build/x86_64/bin/../bin/../bin/libagent_configuration.so + 0x526b3/home/rtbkit/rtbkit/build/x86_64/bin/../bin/../bin/libagent_configuration.so(_ZN6RTBKIT11AgentConfig14createFromJsonERKN4Json5ValueE+0xec3) [0x7f9a3ceed6b3]
+02: 0x0x7f9a3cf20b68 at RTBKIT::AgentConfigurationListener::onMessage(std::vector<std::string, std::allocator<std::string> > const&) + 0x808 in /home/rtbkit/rtbkit/build/x86_64/bin/../bin/../bin/libagent_configuration.so + 0x85b68/home/rtbkit/rtbkit/build/x86_64/bin/../bin/../bin/libagent_configuration.so(_ZN6RTBKIT26AgentConfigurationListener9onMessageERKSt6vectorISsSaISsEE+0x808) [0x7f9a3cf20b68]
+03: 0x0x7f9a3fb291b1 at Datacratic::ZmqNamedClientBusProxy::handleMessage(std::vector<std::string, std::allocator<std::string> > const&) + 0x71 in /home/rtbkit/rtbkit/build/x86_64/bin/../bin/libpost_auction.so + 0x631b1/home/rtbkit/rtbkit/build/x86_64/bin/../bin/libpost_auction.so(_ZN10Datacratic22ZmqNamedClientBusProxy13handleMessageERKSt6vectorISsSaISsEE+0x71) [0x7f9a3fb291b1]
+04: 0x0x7f9a3f82e45b at Datacratic::ZmqEventSource::handleMessage(std::vector<std::string, std::allocator<std::string> > const&) + 0x6b in /home/rtbkit/rtbkit/build/x86_64/bin/../bin/libservices.so + 0xc645b/home/rtbkit/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZN10Datacratic14ZmqEventSource13handleMessageERKSt6vectorISsSaISsEE+0x6b) [0x7f9a3f82e45b]
+05: 0x0x7f9a3f82eeb7 at Datacratic::ZmqEventSource::processOne() + 0x147 in /home/rtbkit/rtbkit/build/x86_64/bin/../bin/libservices.so + 0xc6eb7/home/rtbkit/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZN10Datacratic14ZmqEventSource10processOneEv+0x147) [0x7f9a3f82eeb7]
+06: 0x0x7f9a3f821cca at Datacratic::MessageLoop::processOne() + 0xba in /home/rtbkit/rtbkit/build/x86_64/bin/../bin/libservices.so + 0xb9cca/home/rtbkit/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZN10Datacratic11MessageLoop10processOneEv+0xba) [0x7f9a3f821cca]
+07: 0x0x7f9a3f81d0d8 at Datacratic::MessageLoop::handleEpollEvent(epoll_event&) + 0x18 in /home/rtbkit/rtbkit/build/x86_64/bin/../bin/libservices.so + 0xb50d8/home/rtbkit/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZN10Datacratic11MessageLoop16handleEpollEventER11epoll_event+0x18) [0x7f9a3f81d0d8]
+08: 0x0x7f9a3f80c81b at Datacratic::Epoller::handleEvents(int, int, std::function<bool (epoll_event&)> const&, std::function<void ()> const&, std::function<void ()> const&) + 0x29b in /home/rtbkit/rtbkit/build/x86_64/bin/../bin/libservices.so + 0xa481b/home/rtbkit/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZN10Datacratic7Epoller12handleEventsEiiRKSt8functionIFbR11epoll_eventEERKS1_IFvvEESB_+0x29b) [0x7f9a3f80c81b]
+09: 0x0x7f9a3f821de1 at Datacratic::MessageLoop::processOne() + 0x1d1 in /home/rtbkit/rtbkit/build/x86_64/bin/../bin/libservices.so + 0xb9de1/home/rtbkit/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZN10Datacratic11MessageLoop10processOneEv+0x1d1) [0x7f9a3f821de1]
+10: 0x0x7f9a3f821cca at Datacratic::MessageLoop::processOne() + 0xba in /home/rtbkit/rtbkit/build/x86_64/bin/../bin/libservices.so + 0xb9cca/home/rtbkit/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZN10Datacratic11MessageLoop10processOneEv+0xba) [0x7f9a3f821cca]
+11: 0x0x7f9a3f81d579 at Datacratic::MessageLoop::runWorkerThread() + 0xc9 in /home/rtbkit/rtbkit/build/x86_64/bin/../bin/libservices.so + 0xb5579/home/rtbkit/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZN10Datacratic11MessageLoop15runWorkerThreadEv+0xc9) [0x7f9a3f81d579]
+12: 0x0x7f9a3f81de58 in /home/rtbkit/rtbkit/build/x86_64/bin/../bin/libservices.so + 0xb5e58/home/rtbkit/rtbkit/build/x86_64/bin/../bin/libservices.so(+0xb5e58) [0x7f9a3f81de58]
+13: 0x0x7f9a3e482b9d in /home/rtbkit/local/lib/libboost_thread.so.1.52.0 + 0x10b9d/home/rtbkit/local/lib/libboost_thread.so.1.52.0(+0x10b9d) [0x7f9a3e482b9d]
+14: 0x0x7f9a403dce9a in /lib/x86_64-linux-gnu/libpthread.so.0 + 0x7e9a/lib/x86_64-linux-gnu/libpthread.so.0(+0x7e9a) [0x7f9a403dce9a]
+15: 0x0x7f9a3e7893fd at clone + 0x6d in /lib/x86_64-linux-gnu/libc.so.6 + 0xf43fd/lib/x86_64-linux-gnu/libc.so.6(clone+0x6d) [0x7f9a3e7893fd]
+
+exception processing source ZmqNamedClientBusProxy::doMessage
+exception processing source PostAuctionLoop::configListener
+terminate called after throwing an instance of 'ML::Exception'
+  what():  parsing creative 3: creatives require an ID to be specified

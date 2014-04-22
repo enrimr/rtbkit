@@ -1,0 +1,84 @@
+connecting to Carbon at 127.0.0.1:2003 (localhost)
+bound tcp for http port 9987
+monitor is listening on tcp://*:24000,http://0.0.0.0:9987
+serviceClass/adServer/adServer --> {"serviceLocation":"mtl","serviceName":"adServer","servicePath":"adServer"}
+serviceClass/rtbAgentConfiguration/agentConfigurationService --> {"serviceLocation":"mtl","serviceName":"agentConfigurationService","servicePath":"agentConfigurationService"}
+serviceClass/rtbRouterAugmentation/router.augmentationLoop --> {"serviceLocation":"mtl","serviceName":"router.augmentationLoop","servicePath":"router.augmentationLoop"}
+serviceClass/monitor/monitor --> {"serviceLocation":"mtl","serviceName":"monitor","servicePath":"monitor"}
+serviceClass/rtbRequestRouter/router --> {"serviceLocation":"mtl","serviceName":"router","servicePath":"router"}
+monitor/http/tcp --> [{"httpUri":"http://127.0.0.1:9987","transports":[{"addr":"127.0.0.1","hostScope":"ip-172-31-27-189.ec2.internal","name":"tcp","port":9987},{"name":"http","uri":"http://127.0.0.1:9987"}]},{"httpUri":"http://172.31.27.189:9987","transports":[{"addr":"172.31.27.189","hostScope":"*","name":"tcp","port":9987},{"name":"http","uri":"http://172.31.27.189:9987"}]}]
+monitor/zeromq/tcp --> [{"transports":[{"addr":"127.0.0.1","hostScope":"ip-172-31-27-189.ec2.internal","name":"tcp","port":24000},{"name":"zeromq","socketType":6,"uri":"tcp://127.0.0.1:24000"}],"zmqConnectUri":"tcp://127.0.0.1:24000"},{"transports":[{"addr":"172.31.27.189","hostScope":"*","name":"tcp","port":24000},{"name":"zeromq","socketType":6,"uri":"tcp://ip-172-31-27-189.ec2.internal:24000"}],"zmqConnectUri":"tcp://ip-172-31-27-189.ec2.internal:24000"}]
+
+
+rtbAgentConfiguration: 
+    agentConfigurationService OK  2014-04-22 11:08:38  Alive
+rtbBanker: 
+rtbDataLogger: 
+    data_logger          OK  2014-04-22 11:08:38  Alive
+rtbPostAuctionService: 
+rtbRequestRouter: 
+
+
+rtbAgentConfiguration: 
+    agentConfigurationService OK  2014-04-22 11:08:48  Alive
+rtbBanker: 
+rtbDataLogger: 
+    data_logger          OK  2014-04-22 11:08:48  Alive
+rtbPostAuctionService: 
+rtbRequestRouter: 
+
+
+rtbAgentConfiguration: 
+    agentConfigurationService OK  2014-04-22 11:08:58  Alive
+rtbBanker: 
+rtbDataLogger: 
+    data_logger          OK  2014-04-22 11:08:58  Alive
+rtbPostAuctionService: 
+rtbRequestRouter: 
+
+
+rtbAgentConfiguration: 
+    agentConfigurationService OK  2014-04-22 11:09:08  Alive
+rtbBanker: 
+rtbDataLogger: 
+    data_logger          OK  2014-04-22 11:09:08  Alive
+rtbPostAuctionService: 
+rtbRequestRouter: 
+
+
+rtbAgentConfiguration: 
+    agentConfigurationService OK  2014-04-22 11:09:18  Alive
+rtbBanker: 
+rtbDataLogger: 
+    data_logger          OK  2014-04-22 11:09:18  Alive
+rtbPostAuctionService: 
+rtbRequestRouter: 
+
+
+rtbAgentConfiguration: 
+    agentConfigurationService OK  2014-04-22 11:09:28  Alive
+rtbBanker: 
+rtbDataLogger: 
+    data_logger          OK  2014-04-22 11:09:28  Alive
+rtbPostAuctionService: 
+rtbRequestRouter: 
+
+
+rtbAgentConfiguration: 
+    agentConfigurationService OK  2014-04-22 11:09:38  Alive
+rtbBanker: 
+rtbDataLogger: 
+    data_logger          OK  2014-04-22 11:09:38  Alive
+rtbPostAuctionService: 
+    PostAuctionLoop      ERR 2014-04-22 11:09:39  WinLoss pipe: ERROR, CampaignEvent pipe: ERROR
+rtbRequestRouter: 
+
+
+rtbAgentConfiguration: 
+    agentConfigurationService OK  2014-04-22 11:09:48  Alive
+rtbBanker: 
+rtbDataLogger: 
+    data_logger          OK  2014-04-22 11:09:48  Alive
+rtbPostAuctionService: 
+    PostAuctionLoop      ERR 2014-04-22 11:09:49  WinLoss pipe: ERROR, CampaignEvent pipe: ERROR
+rtbRequestRouter: 

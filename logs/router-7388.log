@@ -1,0 +1,59 @@
+2014-04-22 07:28:37.366 ZMQ ./soa/service/zmq_endpoint.cc:447 - bool Datacratic::ZmqNamedProxy::connect(const string&, Datacratic::ConnectionStyle) [1;31mconnecting to monitor/zeromq[0m
+2014-04-22 07:28:37.370 ZMQ ./soa/service/zmq_endpoint.cc:494 - bool Datacratic::ZmqNamedProxy::connect(const string&, Datacratic::ConnectionStyle) [1;31mconnected to tcp://ip-172-31-27-189.ec2.internal:24000[0m
+2014-04-22 07:28:37.376 ZMQ ./soa/service/zmq_endpoint.cc:447 - bool Datacratic::ZmqNamedProxy::connect(const string&, Datacratic::ConnectionStyle) [1;31mconnecting to monitor/zeromq[0m
+2014-04-22 07:28:37.386 ZMQ ./soa/service/zmq_endpoint.cc:494 - bool Datacratic::ZmqNamedProxy::connect(const string&, Datacratic::ConnectionStyle) [1;31mconnected to tcp://ip-172-31-27-189.ec2.internal:24000[0m
+2014-04-22 07:28:37.390 ZMQ ./soa/service/zmq_endpoint.cc:447 - bool Datacratic::ZmqNamedProxy::connect(const string&, Datacratic::ConnectionStyle) [1;31mconnecting to masterBanker/zeromq[0m
+2014-04-22 07:28:37.397 ZMQ ./soa/service/zmq_endpoint.cc:494 - bool Datacratic::ZmqNamedProxy::connect(const string&, Datacratic::ConnectionStyle) [1;31mconnected to tcp://ip-172-31-27-189.ec2.internal:22000[0m
+augmentor frequency-cap-ex has connected
+2014-04-22 07:28:37.445 ZMQ ./soa/service/zmq_endpoint.cc:447 - bool Datacratic::ZmqNamedProxy::connect(const string&, Datacratic::ConnectionStyle) [1;31mconnecting to PostAuctionLoop/events[0m
+agent fixed-price-agent-ex_7391 connected to router
+wexists handler returned -101
+2. returning result 
+2014-04-22 07:28:37.453 ZMQ ./soa/service/zmq_endpoint.cc:447 - bool Datacratic::ZmqNamedProxy::connect(const string&, Datacratic::ConnectionStyle) [1;31mconnecting to agentConfigurationService/listen[0m
+2014-04-22 07:28:37.462 ZMQ ./soa/service/zmq_endpoint.cc:494 - bool Datacratic::ZmqNamedProxy::connect(const string&, Datacratic::ConnectionStyle) [1;31mconnected to tcp://ip-172-31-27-189.ec2.internal:19000[0m
+got configuration message fixed-price-agent-ex_7391
+
+--------------------------[Exception thrown]---------------------------
+time:   2014-04-22-072837
+type:   ML::Exception
+pid:    7388; tid: 7474
+what:   creatives require an ID to be specified
+stack:
+00: 0x0x7f95d59eedb7 at __cxa_throw + 0x27 in /home/rtbkit/rtbkit/build/x86_64/bin/../bin/libexception_hook.so + 0xdb7/home/rtbkit/rtbkit/build/x86_64/bin/../bin/libexception_hook.so(__cxa_throw+0x27) [0x7f95d59eedb7]
+01: 0x0x7f95d11fa785 at RTBKIT::Creative::fromJson(Json::Value const&) + 0x215 in /home/rtbkit/rtbkit/build/x86_64/bin/../bin/../bin/libagent_configuration.so + 0x51785/home/rtbkit/rtbkit/build/x86_64/bin/../bin/../bin/libagent_configuration.so(_ZN6RTBKIT8Creative8fromJsonERKN4Json5ValueE+0x215) [0x7f95d11fa785]
+02: 0x0x7f95d11faf82 at RTBKIT::AgentConfig::createFromJson(Json::Value const&) + 0x792 in /home/rtbkit/rtbkit/build/x86_64/bin/../bin/../bin/libagent_configuration.so + 0x51f82/home/rtbkit/rtbkit/build/x86_64/bin/../bin/../bin/libagent_configuration.so(_ZN6RTBKIT11AgentConfig14createFromJsonERKN4Json5ValueE+0x792) [0x7f95d11faf82]
+03: 0x0x7f95d122eb68 at RTBKIT::AgentConfigurationListener::onMessage(std::vector<std::string, std::allocator<std::string> > const&) + 0x808 in /home/rtbkit/rtbkit/build/x86_64/bin/../bin/../bin/libagent_configuration.so + 0x85b68/home/rtbkit/rtbkit/build/x86_64/bin/../bin/../bin/libagent_configuration.so(_ZN6RTBKIT26AgentConfigurationListener9onMessageERKSt6vectorISsSaISsEE+0x808) [0x7f95d122eb68]
+04: 0x0x7f95d5319401 at Datacratic::ZmqNamedClientBusProxy::handleMessage(std::vector<std::string, std::allocator<std::string> > const&) + 0x71 in /home/rtbkit/rtbkit/build/x86_64/bin/../bin/librtb_router.so + 0xa1401/home/rtbkit/rtbkit/build/x86_64/bin/../bin/librtb_router.so(_ZN10Datacratic22ZmqNamedClientBusProxy13handleMessageERKSt6vectorISsSaISsEE+0x71) [0x7f95d5319401]
+05: 0x0x7f95d3aac45b at Datacratic::ZmqEventSource::handleMessage(std::vector<std::string, std::allocator<std::string> > const&) + 0x6b in /home/rtbkit/rtbkit/build/x86_64/bin/../bin/libservices.so + 0xc645b/home/rtbkit/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZN10Datacratic14ZmqEventSource13handleMessageERKSt6vectorISsSaISsEE+0x6b) [0x7f95d3aac45b]
+06: 0x0x7f95d3aaceb7 at Datacratic::ZmqEventSource::processOne() + 0x147 in /home/rtbkit/rtbkit/build/x86_64/bin/../bin/libservices.so + 0xc6eb7/home/rtbkit/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZN10Datacratic14ZmqEventSource10processOneEv+0x147) [0x7f95d3aaceb7]
+07: 0x0x7f95d3a9fcca at Datacratic::MessageLoop::processOne() + 0xba in /home/rtbkit/rtbkit/build/x86_64/bin/../bin/libservices.so + 0xb9cca/home/rtbkit/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZN10Datacratic11MessageLoop10processOneEv+0xba) [0x7f95d3a9fcca]
+08: 0x0x7f95d3a9fcca at Datacratic::MessageLoop::processOne() + 0xba in /home/rtbkit/rtbkit/build/x86_64/bin/../bin/libservices.so + 0xb9cca/home/rtbkit/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZN10Datacratic11MessageLoop10processOneEv+0xba) [0x7f95d3a9fcca]
+09: 0x0x7f95d3a9b579 at Datacratic::MessageLoop::runWorkerThread() + 0xc9 in /home/rtbkit/rtbkit/build/x86_64/bin/../bin/libservices.so + 0xb5579/home/rtbkit/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZN10Datacratic11MessageLoop15runWorkerThreadEv+0xc9) [0x7f95d3a9b579]
+10: 0x0x7f95d3a9be58 in /home/rtbkit/rtbkit/build/x86_64/bin/../bin/libservices.so + 0xb5e58/home/rtbkit/rtbkit/build/x86_64/bin/../bin/libservices.so(+0xb5e58) [0x7f95d3a9be58]
+11: 0x0x7f95d3f70b9d in /home/rtbkit/local/lib/libboost_thread.so.1.52.0 + 0x10b9d/home/rtbkit/local/lib/libboost_thread.so.1.52.0(+0x10b9d) [0x7f95d3f70b9d]
+12: 0x0x7f95d5bf8e9a in /lib/x86_64-linux-gnu/libpthread.so.0 + 0x7e9a/lib/x86_64-linux-gnu/libpthread.so.0(+0x7e9a) [0x7f95d5bf8e9a]
+13: 0x0x7f95d45283fd at clone + 0x6d in /lib/x86_64-linux-gnu/libc.so.6 + 0xf43fd/lib/x86_64-linux-gnu/libc.so.6(clone+0x6d) [0x7f95d45283fd]
+
+
+--------------------------[Exception thrown]---------------------------
+2014-04-22 07:28:37.476 ZMQ ./soa/service/zmq_endpoint.cc:447 - bool Datacratic::ZmqNamedProxy::connect(const string&, Datacratic::ConnectionStyle) [1;31mconnecting to PostAuctionLoop/events[0m
+
+--------------------------[Exception thrown]---------------------------
+time:   2014-04-22-072837
+type:   ML::Exception
+pid:    7388; tid: 7388
+what:   couldn't bind to any port in range [12339,12340]
+stack:
+00: 0x0x7f95d59eedb7 at __cxa_throw + 0x27 in /home/rtbkit/rtbkit/build/x86_64/bin/../bin/libexception_hook.so + 0xdb7/home/rtbkit/rtbkit/build/x86_64/bin/../bin/libexception_hook.so(__cxa_throw+0x27) [0x7f95d59eedb7]
+01: 0x0x7f95d3a86092 at Datacratic::AcceptorT<Datacratic::SocketTransport>::listen(Datacratic::PortRange const&, std::string const&, Datacratic::PassiveEndpoint*, bool, int) + 0x1c2 in /home/rtbkit/rtbkit/build/x86_64/bin/../bin/libservices.so + 0xa0092/home/rtbkit/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZN10Datacratic9AcceptorTINS_15SocketTransportEE6listenERKNS_9PortRangeERKSsPNS_15PassiveEndpointEbi+0x1c2) [0x7f95d3a86092]
+02: 0x0x7f95d3a85e0b at Datacratic::PassiveEndpoint::init(Datacratic::PortRange const&, std::string const&, int, bool, bool, int) + 0x4b in /home/rtbkit/rtbkit/build/x86_64/bin/../bin/libservices.so + 0x9fe0b/home/rtbkit/rtbkit/build/x86_64/bin/../bin/libservices.so(_ZN10Datacratic15PassiveEndpoint4initERKNS_9PortRangeERKSsibbi+0x4b) [0x7f95d3a85e0b]
+03: 0x0x7f95c354dd80 at RTBKIT::MockExchangeConnector::start() + 0x60 in /home/rtbkit/rtbkit/build/x86_64/bin/../bin/../bin/libmock_exchange.so + 0x21d80/home/rtbkit/rtbkit/build/x86_64/bin/../bin/../bin/libmock_exchange.so(_ZN6RTBKIT21MockExchangeConnector5startEv+0x60) [0x7f95c354dd80]
+04: 0x0x7f95d52f3dfd at RTBKIT::Router::startExchange(std::string const&, Json::Value const&) + 0x4d in /home/rtbkit/rtbkit/build/x86_64/bin/../bin/librtb_router.so + 0x7bdfd/home/rtbkit/rtbkit/build/x86_64/bin/../bin/librtb_router.so(_ZN6RTBKIT6Router13startExchangeERKSsRKN4Json5ValueE+0x4d) [0x7f95d52f3dfd]
+05: 0x0x7f95d52f4280 at RTBKIT::Router::startExchange(Json::Value const&) + 0x40 in /home/rtbkit/rtbkit/build/x86_64/bin/../bin/librtb_router.so + 0x7c280/home/rtbkit/rtbkit/build/x86_64/bin/../bin/librtb_router.so(_ZN6RTBKIT6Router13startExchangeERKN4Json5ValueE+0x40) [0x7f95d52f4280]
+06: 0x0x421908 at RTBKIT::RouterRunner::start() + 0xb8 in build/x86_64/bin/router_runner + 0x21908build/x86_64/bin/router_runner(_ZN6RTBKIT12RouterRunner5startEv+0xb8) [0x421908]
+07: 0x0x4201ba at main + 0x7a in build/x86_64/bin/router_runner + 0x201babuild/x86_64/bin/router_runner(main+0x7a) [0x4201ba]
+08: 0x0x7f95d445576d at __libc_start_main + 0xed in /lib/x86_64-linux-gnu/libc.so.6 + 0x2176d/lib/x86_64-linux-gnu/libc.so.6(__libc_start_main+0xed) [0x7f95d445576d]
+09: 0x0x4208a9 in build/x86_64/bin/router_runner + 0x208a9build/x86_64/bin/router_runner() [0x4208a9]
+
+terminate called after throwing an instance of 'ML::Exception'
+  what():  couldn't bind to any port in range [12339,12340]

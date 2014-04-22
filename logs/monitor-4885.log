@@ -1,0 +1,24 @@
+connecting to Carbon at 127.0.0.1:2003 (localhost)
+bound tcp for http port 9987
+monitor is listening on tcp://*:24000,http://0.0.0.0:9987
+serviceClass/adServer/adServer --> {"serviceLocation":"mtl","serviceName":"adServer","servicePath":"adServer"}
+serviceClass/rtbAgentConfiguration/agentConfigurationService --> {"serviceLocation":"mtl","serviceName":"agentConfigurationService","servicePath":"agentConfigurationService"}
+serviceClass/rtbRouterAugmentation/router.augmentationLoop --> {"serviceLocation":"mtl","serviceName":"router.augmentationLoop","servicePath":"router.augmentationLoop"}
+serviceClass/monitor/monitor --> {"serviceLocation":"mtl","serviceName":"monitor","servicePath":"monitor"}
+serviceClass/rtbRequestRouter/router --> {"serviceLocation":"mtl","serviceName":"router","servicePath":"router"}
+monitor/http/tcp --> [{"httpUri":"http://127.0.0.1:9987","transports":[{"addr":"127.0.0.1","hostScope":"ip-172-31-27-189.ec2.internal","name":"tcp","port":9987},{"name":"http","uri":"http://127.0.0.1:9987"}]},{"httpUri":"http://172.31.27.189:9987","transports":[{"addr":"172.31.27.189","hostScope":"*","name":"tcp","port":9987},{"name":"http","uri":"http://172.31.27.189:9987"}]}]
+monitor/zeromq/tcp --> [{"transports":[{"addr":"127.0.0.1","hostScope":"ip-172-31-27-189.ec2.internal","name":"tcp","port":24000},{"name":"zeromq","socketType":6,"uri":"tcp://127.0.0.1:24000"}],"zmqConnectUri":"tcp://127.0.0.1:24000"},{"transports":[{"addr":"172.31.27.189","hostScope":"*","name":"tcp","port":24000},{"name":"zeromq","socketType":6,"uri":"tcp://ip-172-31-27-189.ec2.internal:24000"}],"zmqConnectUri":"tcp://ip-172-31-27-189.ec2.internal:24000"}]
+adServer/logger/tcp --> [{"transports":[{"addr":"127.0.0.1","hostScope":"ip-172-31-27-189.ec2.internal","name":"tcp","port":25000},{"name":"zeromq","socketType":9,"uri":"tcp://127.0.0.1:25000"}],"zmqConnectUri":"tcp://127.0.0.1:25000"},{"transports":[{"addr":"172.31.27.189","hostScope":"*","name":"tcp","port":25000},{"name":"zeromq","socketType":9,"uri":"tcp://ip-172-31-27-189.ec2.internal:25000"}],"zmqConnectUri":"tcp://ip-172-31-27-189.ec2.internal:25000"}]
+agentConfigurationService/rest/http/tcp --> [{"httpUri":"http://127.0.0.1:9986","transports":[{"addr":"127.0.0.1","hostScope":"ip-172-31-27-189.ec2.internal","name":"tcp","port":9986},{"name":"http","uri":"http://127.0.0.1:9986"}]},{"httpUri":"http://172.31.27.189:9986","transports":[{"addr":"172.31.27.189","hostScope":"*","name":"tcp","port":9986},{"name":"http","uri":"http://172.31.27.189:9986"}]}]
+agentConfigurationService/rest/zeromq/tcp --> [{"transports":[{"addr":"127.0.0.1","hostScope":"ip-172-31-27-189.ec2.internal","name":"tcp","port":23000},{"name":"zeromq","socketType":6,"uri":"tcp://127.0.0.1:23000"}],"zmqConnectUri":"tcp://127.0.0.1:23000"},{"transports":[{"addr":"172.31.27.189","hostScope":"*","name":"tcp","port":23000},{"name":"zeromq","socketType":6,"uri":"tcp://ip-172-31-27-189.ec2.internal:23000"}],"zmqConnectUri":"tcp://ip-172-31-27-189.ec2.internal:23000"}]
+agentConfigurationService/listen/tcp --> [{"transports":[{"addr":"127.0.0.1","hostScope":"ip-172-31-27-189.ec2.internal","name":"tcp","port":19000},{"name":"zeromq","socketType":6,"uri":"tcp://127.0.0.1:19000"}],"zmqConnectUri":"tcp://127.0.0.1:19000"},{"transports":[{"addr":"172.31.27.189","hostScope":"*","name":"tcp","port":19000},{"name":"zeromq","socketType":6,"uri":"tcp://ip-172-31-27-189.ec2.internal:19000"}],"zmqConnectUri":"tcp://ip-172-31-27-189.ec2.internal:19000"}]
+agentConfigurationService/agents/tcp --> [{"transports":[{"addr":"127.0.0.1","hostScope":"ip-172-31-27-189.ec2.internal","name":"tcp","port":15000},{"name":"zeromq","socketType":6,"uri":"tcp://127.0.0.1:15000"}],"zmqConnectUri":"tcp://127.0.0.1:15000"},{"transports":[{"addr":"172.31.27.189","hostScope":"*","name":"tcp","port":15000},{"name":"zeromq","socketType":6,"uri":"tcp://ip-172-31-27-189.ec2.internal:15000"}],"zmqConnectUri":"tcp://ip-172-31-27-189.ec2.internal:15000"}]
+
+
+rtbAgentConfiguration: 
+    agentConfigurationService OK  2014-04-22 11:12:10  Alive
+rtbBanker: 
+rtbDataLogger: 
+    data_logger          OK  2014-04-22 11:12:10  Alive
+rtbPostAuctionService: 
+rtbRequestRouter: 
