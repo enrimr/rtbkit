@@ -94,12 +94,13 @@ struct FixedPriceBiddingAgent :
         // Accounts are used to control the allocation of spending budgets for
         // an agent. The whole mechanism is fully generic and can be setup in
         // whatever you feel it bests suits you.
-        config.account = {"hello", "world"};
+        config.account = {"hello", "world", "im", "happy"};
 
         // Specify the properties of the creatives we are trying to show.
         config.creatives.push_back(Creative::sampleLB);
         config.creatives.push_back(Creative::sampleWS);
         config.creatives.push_back(Creative::sampleBB);
+        config.creatives.push_back(Creative(640, 1136,  "FT: iPhone"));
 
 
         // Indicate to the router that we want our bid requests to be augmented
@@ -232,4 +233,3 @@ int main(int argc, char** argv)
 
     return 0;
 }
-
